@@ -24,8 +24,8 @@
 
 
 \begin{tabular}[hc]{>{\huge}l >{\huge}l}
-  Examiner: & Prof. Dr. Bugs Bunny \\[0.3cm]
-  Advisers: & Terence Hill, Bud Spencer \\[1.2cm]
+  Examiner: & \firstexaminer \\[0.3cm]
+  Advisers: & \advisers \\[1.2cm]
 \end{tabular}
 \vfill  % move the following text to the bottom
 
@@ -48,7 +48,18 @@
 05.\,07.\,2016 -- 05.\,10.\,2016   \bigskip{} \\
 \
 \textbf{Examiner}                  \smallskip{} \\
-Prof. Dr. Bugs Bunny               \bigskip{} \\
+\firstexaminer                     \bigskip{} \\
 \
+% If there is a second examiner include it
+\ifdef{\secondexaminer}
+	{
+	% Include
+	\textbf{Second Examiner}       \smallskip{} \\
+	\secondexaminer                \bigskip{} \\
+	\
+	}
+	{
+	% No second examiner, ignore
+	}
 \textbf{Advisers}                  \smallskip{} \\
-Terence Hill, Bud Spencer
+\advisers
