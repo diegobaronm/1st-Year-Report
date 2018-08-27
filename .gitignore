@@ -1,3 +1,6 @@
+# out file only required once
+out/thesis_main.pdf
+
 # Latex files
 *.aux
 *.bbl
