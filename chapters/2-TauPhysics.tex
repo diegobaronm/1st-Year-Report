@@ -1,20 +1,20 @@
 \chapter{Tau physics overview}\label{chap:relatedwork}
-This chapter is a review of the Tau lepton properties. They include the nature of this particle, its interactions with other Standard Model (SM) particles, its main decay modes and the physics implications of the so called Lepton Universality (LU), one of the SM predictions.  
+This chapter is a review of the Tau lepton properties. They include the nature of this particle, its interactions with other the Standard Model (SM) particles, its main decay modes and the physics implications of the so called Lepton Universality (LU), one of the SM predictions.  
 
 \section{The Tau Lepton}
-The Tau is a spin-$\frac{1}{2}$, electrically charged particle that belongs to the same family of particles as the electron, the muon and the neutrinos, they are all called \textit{]leptons}. Leptons are elementary particles that interact only via the weak and electromagnetic interactions, for the latter case only if they have electric charge.  
+The Tau is a spin-$\frac{1}{2}$, electrically charged particle that belongs to the same family of particles as the electron, the muon and the neutrinos, they are all called \textit{leptons}. Leptons are elementary particles that interact only via the weak and electromagnetic interactions, for the latter case only if they have electric charge.  
 
 The first hints for the tau existence came from experiments conducted at the Stanford Linear Accelerator Center and Lawrence Berkeley National Laboratory \cite{PhysRevLett.35.1489}. They discovered 64 events of the form:
 \begin{equation}
 	e^+ + e^- \to e^\pm + \mu^\mp + \geq \text{2 undetected particles},
 \end{equation}
-for which there was no conventional explanation at that time. Later on, it was discovered that these events came from the production of a pair of tau particles and then a its subsequent decay on one electron, a muon and four neutrinos. Events like,
+for which there was no conventional explanation at the time. Later on, it was discovered that these events came from the production of a pair of new particles, two taus that subsequently decayed onto one electron, a muon and four neutrinos. Events like,
 \begin{equation}
 e^+ + e^- \to \tau^+ \tau^- \to e^\pm + \mu^\mp + 4\nu,
 \end{equation}	
 were later explored to derive tau mass and spin, confirming the existence of a third generation of leptons. 
 
-The tau mass being $1776.86 \pm 0.12$ MeV allows this lepton not only to decay into the other lighter lepton generations (\textit{leptonic tau decays}), as its shown on Fig.\ref{Fig1}  , but into \textit{hadrons}. These are particle made of quarks, all the decay channels of the tau containing hadrons in the final state are called \textit{hadronic tau decays}. An example of this decay mode is shown in Fig.\ref{Fig2}
+The tau mass being $1776.86 \pm 0.12$ MeV allows this lepton not only to decay into the other lighter lepton generations (\textit{leptonic tau decays}), as its shown on Fig.\ref{Fig1}  , but into \textit{hadrons}. These are particles made of quarks, all the decay channels of the tau containing hadrons in the final state are called \textit{hadronic tau decays}. An example of this decay mode is shown in Fig.\ref{Fig2}
 
 \begin{figure}[h]
 	\centering
@@ -33,23 +33,24 @@ Naively, if we were to estimate the branching fraction for hadronic and leptonic
 \begin{equation}
 	\beta(\tau\to X\nu_\tau)=\frac{\Gamma(\tau\to X\nu_\tau)}{\Gamma_{\text{tot}}},
 \end{equation}
-where X could be any group of leptons or hadrons and $\Gamma_{\text{tot}}$ is the total decay width for the tau, we could argue that the contribution from the hadronic decays triples the one for the leptonic channels. This is because in any hadronic decay, we would have to count 3 different diagrams, like the one in Fig.\ref{Fig2} because of the 3 colour possibility for the quarks.
+where X could be any group of leptons or hadrons and $\Gamma_{\text{tot}}$ is the total decay width for the tau, we could argue that the contribution from the hadronic decays triples the contribution for one of the leptonic modes. This is because in any hadronic decay, we would have to count 3 different diagrams, like the one in Fig.\ref{Fig2} because of the 3 colour possibility for the quarks.
 
 Thus, 
 \begin{align}
 \beta(\tau\to l\nu_l\nu_\tau)\approx 20\%& \hspace{1cm}l=e,\mu;
 \\
-\beta(\tau\to X\nu_\tau)\approx 60\%& \hspace{1cm} X=\text{hadrons+neutrinos}
+\beta(\tau\to X\nu_\tau)\approx 60\%& \hspace{1cm} X=\text{hadrons+neutrinos}.
 \end{align}
-in fact, this naive estimation is not so bad. Actual values for the leptonic branching ratios are \cite{PhysRevD.98.030001}:
+In fact, this naive estimation is not so bad. Actual values for the leptonic branching ratios are \cite{PhysRevD.98.030001}:
 \begin{align}
 \beta(\tau\to e\nu_e\nu_\tau)=17.82\pm 0.04\%
+\label{eq6}
 \\
 \beta(\tau\to \mu\nu_\mu\nu_\tau)=17.39\pm 0.04\%,
 \end{align}
 and the small difference is due to the mass variation between the muon and the electron.
 
-On the other hand, the hadronic decays of the tau are more varied and can contain much more particles in the final states. The vast majority of hadronic tau decays have charged or neutral pions in the final states, but more exotic decays including kaons also happen. Branching ratios for the most important tau hadronic decays are showed on Table \ref{Table1}.
+On the other hand, the hadronic decays of the tau are more varied and can contain much more particles in the final states. The vast majority of hadronic tau decays have charged or neutral pions in the final states, but more exotic decays including kaons also happen. Branching ratios for the most important tau hadronic decays are showed in Table \ref{Table1}.
 \begin{table}[]
 	\centering
 \begin{tabular}{|c|c|}
@@ -66,6 +67,27 @@ On the other hand, the hadronic decays of the tau are more varied and can contai
 	\label{Table1}
 \end{table}
 \section{Lepton Universality}
+The SM predicts that all charged leptons $(e,\mu,\tau)$ interact via the electromagnetic and weak forces and explains that this interactions can be seen as the interchange of \textit{vector bosons}, the photon $(\gamma)$ and the W and Z bosons respectively. Specifically, in the SM the form of the interaction does not depend on the lepton generation. This feature of the SM is called \textit{lepton universality} and it can be understand as that many physical process for electrons, muons and taus are almost identical copies of each other (although some small discrepancies arise from the fact that lepton masses are different and extrictly speaking lepton universality is not a exact symmetry). 
 
+For instance, tau leptonic decay widths are an outstanding way to test lepton universality hypothesis. If we start considering muon decay, at low energy we can consider this process to be a point like interaction well described by Fermi theory \cite{FermiTheory}. In this case, if we approximate the electron and neutrinos as being massless particles, a dimensionally correct expression for the width will be of the form:
+\begin{equation}
+	\Gamma(\mu\to e+\nu_e +\nu_\mu)=KG_{F}^{2}m_{\mu}^{5},
+\end{equation} 
+where $G_F=1.1666\times 10^{-5} \text{ GeV}^{-2}$ is the Fermi coupling constant and $K$ is a constant that depends on the form of the interaction. If we assume lepton universality holds, the respective widths for the leptonic tau decay modes, will have the form:
+\begin{align}
+\Gamma(\tau\to e+\nu_e +\nu_\tau)&=KG_{F}^{2}m_{\tau}^{5}
+\\
+\Gamma(\tau\to \mu+\nu_\mu +\nu_\tau)&=\Gamma(\tau\to e+\nu_e +\nu_\tau),
+\end{align}  
+and this explains why to a good approximation leptonic branching fractions for tau decay are equal. Moreover, we can obtain a relation between tau and muon lifetimes. We know that,
+\begin{equation}
+	\tau_l=\frac{1}{\Gamma_\text{Tot}}=\frac{\beta(l\to e\nu_e \nu_l)}{\Gamma(l\to e\nu_e \nu_l)},
+	\label{eq11}
+\end{equation}
+also that $\beta(\mu\to e\nu_e \nu_\mu)=1$ and taking into account eq.(\ref{eq6}) we can take the ratio between eq.(\ref{eq11}) for $l=\tau ,\mu$ to obtain:
+\begin{equation}
+\frac{\tau_\tau}{\tau_\mu}=\frac{\beta(\tau\to e\nu_e \nu_\tau)}{\beta(\mu\to e\nu_e \nu_\mu)}\left(\frac{m_\mu}{m_\tau}\right)^5=(1.328\pm 0.004)\times 10^{-7}.
+\end{equation}
+This is consistent with the experimental lifetimes ratio $(1.3227\pm 0.0005)\times10^{-7}$. This agreement on lifetimes that differ on 7 orders of magnitude is a good proof that lepton universality holds on W decays at the tau mass scale.
 
-
+Nontheless, recent ... TELL ABOUT B DECAYS.
