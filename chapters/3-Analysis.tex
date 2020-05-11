@@ -1,11 +1,14 @@
-\chapter{Analysis}\label{chap:background}
-Explain the math and notation.
-\input{figures/background/algBackpropagation}
-\input{figures/background/figTikz}
+\chapter{Analysis}\label{chap1}
+At the begining of this chapter, a review of the ATLAS detector at the LHC and a description of the reconstruction and identification of hadronic Tau decays on ATLAS are discussed. The last sections are devoted to describe the Analysis methodology of using $Z\to\tau\tau$ events to measure Monte Carlo correction factors for Tau identification algorithms on the high-$p_T$ region.
 
 \section{The LHC and the ATLAS experiment}
 
-\section{Tau Identification on the ATLAS detector}
+\section{Tau Reconstruction and Identification on the ATLAS detector}
+Leptonically decaying taus ($\tau_\text{lep}$), may have a higher impact parameter and tend to have a softer $p_T$ spectrum compared with prompt W or Z boson decays to muons or electrons. This variables are not sufficient in principle to differentiate between $\taul$ and prompt muons or electrons. In the case of hadronically decaying taus ($\tau_\text{had}$), as we will see, there are a lot more variables we could use to tag the presence of a $\tauh$.
+
+As we saw in section \ref{chap2sec1}, $\tauh$ decays can be classified in 1-prong or 3-prong, depending on the number of charged particles in the decay. A detailed review of the reconstruction procedure is discussed on REF TAU RECO. $\tauh$ candidates are seeded by jets using the anti-$k_t$ algorithm REF ANTI KT, with a distance parameter of 0.4. Jets are required to have $p_T>10$ GeV and $|\eta|<2.5$. Candidates between the barrel and forward calorimeter ($1.37<|\eta|<1.52$) are excluded due to poor instrumentation in this region.
+
+The axis of the seed jet is defined by the energy-weighted barycentre of all clusters of calorimeter cells, called \textit{TopoClusters} REF TOPO CLUSTERS. The $\tauh$ vertex is defined as the vertex with the highest $p_T$-weighted fraction of all tracks with $p_T>0.5$ GeV within a cone of $R=0.2$ around the seed jet axis. Tracks within a cone of $R=0.4$ are classified with a set of boosted decision trees (BDTs) into core and isolation tracks, the number of core tracks defines the number of prongs. Candidates with neither one or three tracks are rejected. Additionally, the sum of the charge of the tracks is required to be $\pm 1$.     
 
 \section{Monte Carlo Samples}
 
