@@ -4,13 +4,15 @@ This chapter describes the analysis methodology of using $Z\to\tau\tau$ events t
 As we saw in the previous section different working points are defined for RNN score relative to the efficiency of selecting true $\tauh$ candidates. When the efficiency of the working points is measured in data and simulation, a correction factor is derived and then applied to the simulation in order for the signal efficiency to agree between data and simulation REF TAU ID PERFORMANCE. Because of the top quark mass, $t\bar{t}$ events are used as a source of high momentum taus for measuring correction factors on the high-$p_T$ bins. But as we already saw in section \ref{chap2sec2}, LU may not hold on W decays. For that reason our study is aimed to use $Z\to\tau\tau$ events for deriving simulation correction factors on the high-$p_T$ region.   
 
 \section{Signal events}
-The type of $Z\to\tau\tau$ events that we will consider as signal are when one of the taus decays hadronically and the other leptonically either into an electron or a muon ($Z\to\tau\tau\to\tau_h +l=\mu,e$). Thus, our final states will include a $\tauh$ candidate and a lepton $l=e,\mu$. The presence of this lepton will be used as our tag. 
-Generally, in $Z\to\tau\tau$ events, the taus are produced back to back and their $\pt$ spectrum is does not go very high. One way to select events where the taus are boosted on the transverse plain is to look for events where the opening angle in the transverse plane between the taus ($\Delta\phi(\tauh,\taul)$) is more acute. For these events, the missing transverse momentum ($\ptmiss$) is assumed to come from the neutrinos produced in the decays of the tau leptons. Due to the fact that two neutrinos are produced in the leptonic decay mode we expect our events to have a larger $\ptmiss$ component along the $\taul$ direction.
+The type of $Z\to\tau\tau$ events we consider as signal are when one the taus decays hadronically and the other leptonically, either into an electron or a muon ($Z\to\tau\tau\to\tau_h +l=\mu,e$). Thus, our final states will include a $\tauh$ candidate and a lepton $l=e,\mu$. The presence of this lepton will be used as our tag. 
+Generally, in $Z\to\tau\tau$ events, the taus are produced back to back and their $\pt$ spectrum does not go very high. One way to select events where the taus are boosted on the transverse plain is to look for events where the opening angle in the transverse plane between the taus ($\Delta\phi(\tauh,\taul)$) is more acute. For these events, the missing transverse momentum ($\ptmiss$) is assumed to come from the neutrinos produced in the decays of the tau leptons. Due to the fact that two neutrinos are produced in the leptonic decay mode we expect our events to have a larger $\ptmiss$ component along the $\taul$ direction.
 
-We classify our events in two types of topologies. First, events where the $\ptmiss$ is inside the opening angle between the visible objects, in this kind of events we assume the missing energy is due to a pair of neutrinos flying in the same direction as the visible objects. This is shown in Fig.\ref{Fig7a} . In this case we solve the following equation to obtain the momentum of the neutrinos:
+We classify our events in two types of topologies. First, events where the $\ptmiss$ is inside the opening angle between the visible objects, in this kind of events we assume the missing energy is due to a pair of neutrinos flying in the same direction as the visible objects. This is shown in Fig.\ref{Fig7a} . In this case, we solve the following equation to obtain the momentum of the neutrinos:
+\begin{equation}
+	\vec{p}_{T_{\nu_l}}+\vec{p}_{\nu_h}=\vec{p}_{T_{\text{miss}}},
+\end{equation}
+given the following set of constraints (\textit{collinear approximation}):
 \begin{align}
-	\vec{p}_{T_{\nu_l}}+\vec{p}_{\nu_h}&=\vec{p}_{T_{\text{miss}}},
-	\\
 	\phi(\nu_l)&=\phi(l),
 	\\
 	\phi(\nu_h)&=\phi(\tauh),
@@ -19,7 +21,7 @@ We classify our events in two types of topologies. First, events where the $\ptm
 	\\
 	\eta(\nu_h)&=\eta(\tauh).
 \end{align}
-The second case is when the $\ptmiss$ is outside the angle formed by the visible objects, as is shown in Fig.\ref{Fig7b}, in this case the assumption is that only one neutrino is responsible for the majority of the $\ptmiss$, a neutrino flying in the direction of the visible particle that is closer to the $\ptmiss$. We solve the following equations to obtain the neutrino momentum:
+The second case is when the $\ptmiss$ is outside the angle formed by the visible objects, as is shown in Fig.\ref{Fig7b}, in this case the assumption is that only one neutrino is responsible for the majority of the $\ptmiss$, a neutrino flying in the direction of the visible object that is closest to the $\ptmiss$. We use the following equations to obtain the neutrino momentum:
 \begin{align}
 p_{T_{\nu}}&=\ptmiss \cos(\Delta\phi(\tau_{\text{closer}},\ptmiss)),
 \\
@@ -34,10 +36,58 @@ p_{T_{\nu}}&=\ptmiss \cos(\Delta\phi(\tau_{\text{closer}},\ptmiss)),
 	\caption{The two different types of topologies that define signal events. On the right, when the missing energy is between the visible objects two neutrinos are assumed to be responsible for all the missing energy. On the left, only one neutrino is assumed to be flying on the direction of the visible object closest to the missing energy.}
 	\label{Fig7}
 \end{figure}
+where $\tau_{closer}$ stands for the visible object closest to the direction of the missing energy.
 
+We define a variable called $\Omega$ in order to classify our events in the different topologies already described. First we define:
+\begin{equation}
+	\omega=\frac{\Delta\phi(\tau_{\text{close}},\ptmiss)}{\Delta\phi(\tauh,\taul)},
+\end{equation}
+then,
+\begin{itemize}
+	\item when $\ptmiss$ is inside the opening angle between the visible objects but closer to $\tauh$:
+	\begin{equation}
+		\Omega=\omega,
+	\end{equation}
+	\item when $\ptmiss$ is still inside, but closer to $\taul$:
+	\begin{equation}
+		\Omega=1-\omega.
+	\end{equation}
+	\item If $\ptmiss$ is outside and closer to $\tauh$:
+	\begin{equation}
+		\Omega=-\omega,
+	\end{equation}
+	\item and finally, if $\ptmiss$ is outside and closer to $\taul$:
+	\begin{equation}
+		\Omega=\omega+1.
+	\end{equation}
+\end{itemize}
+Thus, $\Omega$ is a continuous variable that give us information on the topology of the event. When $\ptmiss$ is inside the visible system it has values in the interval [0,1]. Exactly 0 when $\ptmiss$ is in the $\tauh$ direction and 1 when is on the $\taul$ direction. $\Omega$ has negative values when $\ptmiss$ is outside and closer to the $\tauh$ candidate and has positive and values greater than 1 when is outside and closer to the $\taul$. A diagram describing the $\Omega$ values is shown in Fig.\ref{Fig8}.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/Fig8}
+	\caption{Graphical representation of the different values of $\Omega$ depending on the region where the $\ptmiss$ is located in the event.}
+	\label{Fig8}
+\end{figure}
+As we will see later the event classification into this two different type of topologies will allow us to reconstruct and exploit kinematical variables as the invariant mass of the di-tau system, the Z boson transverse momentum ($Z_{p_T}$) and the angular distribution of the objects in the event.
+\section{Monte Carlo and Data Samples}
+The data used for this study has been recorded during the Run-II of the LHC. This corresponds to the 2015-2018 data taking period, the total integrated luminosity corresponds to 139.2 $\text{fb}^{-1}$ of proton-proton collisions at a centre-of-mass energy of $\sqrt{s}=13$ TeV.
 
-\section{Monte Carlo Samples}
+Monte Carlo (MC) samples are used for signal and background simulation. For $Z\to\tau\tau$ events two MC samples are used, Powheg+Pythia8 and Sherpa. For the rest of the samples Powheg+Pythia8 is used. Table \ref{Table3} shows the MC generators used for each process.
 
-\section{The Collinear Approximation}
-
+\begin{table}[]
+	\centering
+	\begin{tabular}{cc}
+		\hline
+		\multicolumn{1}{|c|}{Process}  & \multicolumn{1}{c|}{Event Generator} \\ \hline
+		$Z\to\tau\tau$                 & Powheg+Pythia8 and Sherpa            \\
+		$Z\to ee$                      & Powheg+Pythia8                       \\
+		$Z\to\mu\mu$                   & Powheg+Pythia8                       \\
+		$W\to l\nu_l$				   & Powheg+Pythia8                       \\
+		$t\bar{t}$                     & Powheg+Pythia8                       \\
+		Single $t$                     & Powheg+Pythia8                       \\
+		Diboson                        & Powheg+Pythia8                       \\ \hline
+	\end{tabular}
+	\caption{List of MC event generators used.}
+	\label{Table3}
+\end{table}
 \section{Event Selection}
