@@ -64,7 +64,7 @@ then,
 Thus, $\Omega$ is a continuous variable that give us information on the topology of the event. When $\ptmiss$ is inside the visible system it has values in the interval [0,1]. Exactly 0 when $\ptmiss$ is in the $\tauh$ direction and 1 when is on the $\taul$ direction. $\Omega$ has negative values when $\ptmiss$ is outside and closer to the $\tauh$ candidate and has positive and values greater than 1 when is outside and closer to the $\taul$. A diagram describing the $\Omega$ values is shown in Fig.\ref{Fig8}.
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.7\textwidth]{figures/Fig8}
+	\includegraphics[width=0.5\textwidth]{figures/Fig8}
 	\caption{Graphical representation of the different values of $\Omega$ depending on the region where the $\ptmiss$ is located in the event.}
 	\label{Fig8}
 \end{figure}
@@ -103,12 +103,27 @@ Events containing b jets are vetoed in order to reject $t\bar{t}$ events. Also a
 Adittionally, a cut on the reconstructed invariant mass ($\mreco$) of the event is made, the cut aims to pick events where the invariant mass is around the Z boson mass ($70\leq\mreco\leq 110$ GeV). The invariant mass of the final states is calculated depending on the event topology. For events where $\Omega\in [0,1]$ (\textit{in between events}),  $\mreco^{2}=(q_l+q_{\tauh}+q_{\nu_l}+q_{\nu_{\tauh}})^2$ and when the $\ptmiss$ is outside (\textit{outside events}), $(\mreco-5)^{2}=(q_l+q_{\tauh}+q_\nu)^2$. In the latter case we manually add 5 GeV to maintain our cuts consistent, since in this region the Z mass is underestimated. Fig. shows the distribution of $\mreco$ for the in between and outside $Z\to\tauh\mu$ events. 
 \begin{figure}[ht]
 	\centering
-	\subfloat[]{\label{Fig7a}{\includegraphics[width=0.50\textwidth]{figures/Fig10a}}}\hfill
-	\subfloat[]{\label{Fig7b}{\includegraphics[width=0.50\textwidth]{figures/Fig10b}}}
+	\subfloat[]{\label{Fig10a}{\includegraphics[width=0.50\textwidth]{figures/Fig10a}}}\hfill
+	\subfloat[]{\label{Fig10b}{\includegraphics[width=0.50\textwidth]{figures/Fig10b}}}
 	\caption{$\mreco$ distribution for the in between region (a) and the outside region (b).}
 	\label{Fig10}
 \end{figure}
 
-In addition, for the $Z\to\tauh e$ final state two cuts are aimed to reject events where the $\tauh$ candidate is faked by an electron. First, the invariant mass of the electron 
+In addition, for the $Z\to\tauh e$ final state, we add two cuts aimed to reject events where the $\tauh$ candidate is faked by an electron. First to reject $Z\to ee$ events, a requirement on the invariant mass of the electron and $\tauh$ candidate is made, $m(e,\tauh)<80$ GeV. Then, we also make use of an ID algorithm to discriminate electrons from real $\tauh$. In our case, eBDTScore$\geq 0.06$. The distributions for this variables are shown in Fig.\ref{Fig11}.
+\begin{figure}[ht]
+	\centering
+	\subfloat[]{\label{Fig11a}{\includegraphics[width=0.50\textwidth]{figures/Fig11a}}}\hfill
+	\subfloat[]{\label{Fig11b}{\includegraphics[width=0.50\textwidth]{figures/Fig11b}}}
+	\caption{Distribution of the variables used for rejecting $\tauh$ fakes coming from electrons. On the right $m(e,\tauh)$ distribution (a) and on the left the eBDTScore distribution (b).}
+	\label{Fig11}
+\end{figure}
+Finally, in order to measure the tau ID scale factors on the high-$p_T$ region we select events where $p_T(\tauh)\geq 45$ GeV. The $p_T$ distributions for $\tauh$ candidates are shown in Fig.\ref{Fig12} for the in between and outside regions.
+\begin{figure}[ht]
+	\centering
+	\subfloat[]{\label{Fig12a}{\includegraphics[width=0.50\textwidth]{figures/Fig12a}}}\hfill
+	\subfloat[]{\label{Fig12b}{\includegraphics[width=0.50\textwidth]{figures/Fig12b}}}
+	\caption{$p_T(\tauh)$ distribution for the in between (a) and outside (b) regions.}
+	\label{Fig12}
+\end{figure} 
 \section{Multi Jet Background Estimation}
 

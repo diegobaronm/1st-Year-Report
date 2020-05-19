@@ -1,5 +1,5 @@
 % documentclass options:
-\documentclass[11pt,
+\documentclass[11pt,DIV=16,
   a4paper,
   parskip=half, % This is some extra vertical space between paragraphs, the suggestion is 2cm which is really ugly, so we use what koma script gives us
   % you can also set it to full for even more space. But there is a bad tex style decision: parskip also changes the spacing between listitems such as
@@ -15,6 +15,7 @@
 \usepackage[ngerman,english]{babel} % If you write mainly in English change order to ngerman, english. Also change that in the documentclass options above.
 % Include of titling must happen before \title etc.
 % that's why it's not in setup.tex
+
 \usepackage{titling}
 \title{Using $Z\to\tau\tau$ events to calculate Tau ID scale factors using high $p_T$ Tau leptons}
 \author{Diego Baron}
