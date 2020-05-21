@@ -1,13 +1,13 @@
 \chapter{$Z\to\tauh\taul$ tag and probe study}\label{chap1}
 This chapter describes the analysis methodology of using $Z\to\tau\tau$ events to measure Monte Carlo correction factors for tau identification algorithms on the high-$p_T$ region.
 
-As we saw in the previous section different working points are defined for RNN score relative to the efficiency of selecting true $\tauh$ candidates. When the efficiency of the working points is measured in data and simulation, a correction factor is derived and then applied to the simulation in order for the signal efficiency to agree between data and simulation REF TAU ID PERFORMANCE. Because of the top quark mass, $t\bar{t}$ events are used as a source of high momentum taus for measuring correction factors on the high-$p_T$ bins. But as we already saw in section \ref{chap2sec2}, LU may not hold on W decays. For that reason our study is aimed to use $Z\to\tau\tau$ events for deriving simulation correction factors on the high-$p_T$ region.   
+As we saw in the previous section different working points are defined for RNN score relative to the efficiency of selecting true $\tauh$ candidates. When the efficiency of the working points is measured in data and simulation, a correction factor is derived and then applied to the simulation in order for the signal efficiency to agree between data and simulation REF TAU ID PERFORMANCE. Because of the top quark mass, $t\bar{t}$ events are used as a source of high momentum taus for measuring correction factors on the high-$p_T$ bins. But as we already saw in section \ref{chap2sec2}, LU may not hold on W decays. For that reason our study is aimed to use $Z\to\tau\tau$ events for deriving and cross checking simulation correction factors on the high-$p_T$ region.   
 
 \section{Signal events}\label{chap4sec1}
-The type of $Z\to\tau\tau$ events we consider as signal are when one the taus decays hadronically and the other leptonically, either into an electron or a muon ($Z\to\tau\tau\to\tau_h +l=\mu,e$). Thus, our final states will include a $\tauh$ candidate and a lepton $l=e,\mu$. The presence of this lepton will be used as our tag. 
-Generally, in $Z\to\tau\tau$ events, the taus are produced back to back and their $\pt$ spectrum does not go very high. One way to select events where the taus are boosted on the transverse plain is to look for events where the opening angle in the transverse plane between the taus ($\Delta\phi(\tauh,\taul)$) is more acute. For these events, the missing transverse momentum ($\ptmiss$) is assumed to come from the neutrinos produced in the decays of the tau leptons. Due to the fact that two neutrinos are produced in the leptonic decay mode we expect our events to have a larger $\ptmiss$ component along the $\taul$ direction.
+The type of $Z\to\tau\tau$ events we consider as signal for this study are when one the taus decays hadronically and the other leptonically, either into an electron or a muon ($Z\to\tau\tau\to\tau_h +l=\mu,e$). Thus, our final states will include a $\tauh$ candidate and a lepton $l=e,\mu$. The presence of this lepton will be used as our tag. 
+Generally, in $Z\to\tau\tau$ events, the taus are produced back to back and their $\pt$ spectrum does not go very high. One way to select events where the taus are boosted on the transverse plane is to look for events where the opening angle in the transverse plane between the taus ($\Delta\phi(\tauh,\taul)$) is more acute. For these events, the missing transverse momentum ($\ptmiss$) is assumed to come from the neutrinos produced in the decays of the tau leptons. Due to the fact that two neutrinos are produced in the leptonic decay mode we expect our events to have a larger $\ptmiss$ component along the $\taul$ direction.
 
-We classify our events in two types of topologies. First, events where the $\ptmiss$ is inside the opening angle between the visible objects, in this kind of events we assume the missing energy is due to a pair of neutrinos flying in the same direction as the visible objects. This is shown in Fig.\ref{Fig7a} . In this case, we solve the following equation to obtain the momentum of the neutrinos:
+We classify our events in two types of topologies. First, events where the $\ptmiss$ is inside the opening angle between the visible objects, in this kind of events we assume the missing energy is due to a pair of neutrinos flying in the same direction as the visible objects. This is shown in Fig.\ref{Fig7a}. In this case, we solve the following equation to obtain the momentum of the neutrinos:
 \begin{equation}
 	\vec{p}_{T_{\nu_l}}+\vec{p}_{\nu_h}=\vec{p}_{T_{\text{miss}}},
 \end{equation}
@@ -21,7 +21,7 @@ given the following set of constraints (\textit{collinear approximation}):
 	\\
 	\eta(\nu_h)&=\eta(\tauh).
 \end{align}
-The second case is when the $\ptmiss$ is outside the angle formed by the visible objects, as is shown in Fig.\ref{Fig7b}, in this case the assumption is that only one neutrino is responsible for the majority of the $\ptmiss$, a neutrino flying in the direction of the visible object that is closest to the $\ptmiss$. We use the following equations to obtain the neutrino momentum:
+The second case is when the $\ptmiss$ is outside the angle formed by the visible objects, as is shown in Fig.\ref{Fig7b}. In this case the assumption is that only one neutrino is responsible for the majority of the $\ptmiss$, a neutrino flying in the direction of the visible object that is closest to the $\ptmiss$. We use the following equations to obtain the neutrino momentum:
 \begin{align}
 p_{T_{\nu}}&=\ptmiss \cos(\Delta\phi(\tau_{\text{closer}},\ptmiss)),
 \\
@@ -31,8 +31,8 @@ p_{T_{\nu}}&=\ptmiss \cos(\Delta\phi(\tau_{\text{closer}},\ptmiss)),
 \end{align} 
 \begin{figure}[ht]
 	\centering
-	\subfloat[]{\label{Fig7a}{\includegraphics[width=0.45\textwidth]{figures/Fig7a}}}\hfill
-	\subfloat[]{\label{Fig7b}{\includegraphics[width=0.45\textwidth]{figures/Fig7b}}}
+	\subfloat[]{\label{Fig7a}{\includegraphics[width=0.49\textwidth]{figures/Fig7a}}}\hfill
+	\subfloat[]{\label{Fig7b}{\includegraphics[width=0.49\textwidth]{figures/Fig7b}}}
 	\caption{The two different types of topologies that define signal events. On the right, when the missing energy is between the visible objects two neutrinos are assumed to be responsible for all the missing energy. On the left, only one neutrino is assumed to be flying on the direction of the visible object closest to the missing energy.}
 	\label{Fig7}
 \end{figure}
@@ -70,7 +70,7 @@ Thus, $\Omega$ is a continuous variable that give us information on the topology
 \end{figure}
 As we will see later the event classification into this two different type of topologies will allow us to reconstruct and exploit kinematical variables as the invariant mass of the di-tau system, the Z boson transverse momentum ($Z_{p_T}$) and the angular distribution of the objects in the event.
 \section{Monte Carlo and Data Samples}
-The data used for this study has been recorded during the Run-II of the LHC. This corresponds to the 2015-2018 data taking period, the total integrated luminosity corresponds to 139.2 $\text{fb}^{-1}$ of proton-proton collisions at a centre-of-mass energy of $\sqrt{s}=13$ TeV.
+The data used for this study has been recorded during the Run-II of the LHC. It corresponds to the 2015-2018 data taking period, the total integrated luminosity corresponds to 139.2 $\text{fb}^{-1}$ of proton-proton collisions at a centre-of-mass energy of $\sqrt{s}=13$ TeV.
 
 Monte Carlo (MC) samples are used for signal and background simulation. For $Z\to\tau\tau$ events two MC samples are used, Powheg+Pythia8 and Sherpa. For the rest of the samples Powheg+Pythia8 is used. Table \ref{Table3} shows the MC generators used for each process.
 

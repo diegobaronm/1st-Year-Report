@@ -15,9 +15,8 @@
 \usepackage[ngerman,english]{babel} % If you write mainly in English change order to ngerman, english. Also change that in the documentclass options above.
 % Include of titling must happen before \title etc.
 % that's why it's not in setup.tex
-
 \usepackage{titling}
-\title{Using $Z\to\tau\tau$ events to calculate Tau ID scale factors using high $p_T$ Tau leptons}
+\title{Using $Z\to\tau\tau$ events to calculate tau ID scale factors using high $p_T$ tau leptons}
 \author{Diego Baron}
 
 % Change to your first examiner
@@ -32,7 +31,6 @@
 
 % include all packages and define commands in setup.tex
 \input{setup}
-
 \begin{document}
     \pagestyle{empty} % no header and no page number
     % disable hyper links to remove warning "destination with same identifier"
@@ -48,12 +46,12 @@
     % if you wang a more fancy header use \usepackage[automark,headsepline]{scrlayer-scrpage}
     % and read about it in the KOMA script documentation, https://www.ctan.org/pkg/koma-script
     \frontmatter  % roman page numbers
-    \input{chapters/0_1-declaration}
-    \input{chapters/0_2-abstract}
+    %\input{chapters/0_1-declaration}
+    %\input{chapters/0_2-abstract}
     \tableofcontents
     \listoffigures
     \listoftables
-    \listofalgorithms
+    %\listofalgorithms
     \hypersetup{pageanchor=true}  % re-enable hyperlinking
 
     \mainmatter  % Arabic page numbers
@@ -70,7 +68,7 @@
     % don't forget to remove before submission!
     %\input{todo_list}
 
-    \bibliographystyle{ieeetr}
+    \bibliographystyle{abbrv}
     \bibliography{bib/topic1,bib/topic2}
     % bibliography is not in the table of contents per default, add it manually
     % enable the \renewcommand for german header
