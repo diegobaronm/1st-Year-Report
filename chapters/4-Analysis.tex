@@ -1,15 +1,15 @@
 \chapter{$Z\to\tauh\taul$ tag and probe study}\label{chap1}
-This chapter describes the analysis methodology of using $Z\to\tau\tau$ events to measure Monte Carlo correction factors for tau identification algorithms on the high-$p_T$ region.
+This chapter describes the analysis methodology of using $Z\to\tau\tau$ events to measure Monte Carlo correction factors for tau identification algorithms in the high-$p_T$ region.
 
-As we saw in the previous section different working points are defined for RNN score relative to the efficiency of selecting true $\tauh$ candidates. When the efficiency of the working points is measured in data and simulation, a correction factor is derived and then applied to the simulation in order for the signal efficiency to agree between data and simulation REF TAU ID PERFORMANCE. Because of the top quark mass, $t\bar{t}$ events are used as a source of high momentum taus for measuring correction factors on the high-$p_T$ bins. But as we already saw in section \ref{chap2sec2}, LU may not hold on W decays. For that reason our study is aimed to use $Z\to\tau\tau$ events for deriving and cross checking simulation correction factors on the high-$p_T$ region.   
+As we saw in the previous section different working points are defined for RNN score relative to the efficiency of selecting true $\tauh$ candidates. When the efficiency of the working points is measured in data and simulation, a correction factor is derived and then applied to the simulation in order for the signal efficiency to agree between data and simulation REF TAU ID PERFORMANCE. Because of the top quark mass, $t\bar{t}$ events are used as a source of high momentum taus for measuring correction factors on the high-$p_T$ bins. But as we already saw in section \ref{chap2sec2}, Lepton universality may not hold in W decays. For that reason our study is aimed to use $Z\to\tau\tau$ events for deriving and cross checking simulation correction factors in the high-$p_T$ region.   
 
 \section{Signal events}\label{chap4sec1}
 The type of $Z\to\tau\tau$ events we consider as signal for this study are when one the taus decays hadronically and the other leptonically, either into an electron or a muon ($Z\to\tau\tau\to\tau_h +l=\mu,e$). Thus, our final states will include a $\tauh$ candidate and a lepton $l=e,\mu$. The presence of this lepton will be used as our tag. 
-Generally, in $Z\to\tau\tau$ events, the taus are produced back to back and their $\pt$ spectrum does not go very high. One way to select events where the taus are boosted on the transverse plane is to look for events where the opening angle in the transverse plane between the taus ($\Delta\phi(\tauh,\taul)$) is more acute. For these events, the missing transverse momentum ($\ptmiss$) is assumed to come from the neutrinos produced in the decays of the tau leptons. Due to the fact that two neutrinos are produced in the leptonic decay mode we expect our events to have a larger $\ptmiss$ component along the $\taul$ direction.
+Generally, in $Z\to\tau\tau$ events, the taus are produced back to back and their $\pt$ spectrum does not go very high. One way to select events where the taus are boosted in the transverse plane is to look for events where the opening angle in the transverse plane between the taus ($\Delta\phi(\tauh,\taul)$) is more acute. For these events, the missing transverse momentum ($\ptmiss$) is assumed to come from the neutrinos produced in the decays of the tau leptons. Due to the fact that two neutrinos are produced in the leptonic decay mode we expect our events to have a larger $\ptmiss$ component along the $\taul$ direction.
 
 We classify our events in two types of topologies. First, events where the $\ptmiss$ is inside the opening angle between the visible objects, in this kind of events we assume the missing energy is due to a pair of neutrinos flying in the same direction as the visible objects. This is shown in Fig.\ref{Fig7a}. In this case, we solve the following equation to obtain the momentum of the neutrinos:
 \begin{equation}
-	\vec{p}_{T_{\nu_l}}+\vec{p}_{\nu_h}=\vec{p}_{T_{\text{miss}}},
+	\vec{p}_{T_{\nu_l}}+\vec{p}_{\nu_h}=\vec{\ptmiss},
 \end{equation}
 given the following set of constraints (\textit{collinear approximation}):
 \begin{align}
@@ -93,7 +93,7 @@ Monte Carlo (MC) samples are used for signal and background simulation. For $Z\t
 \section{Event Selection}\label{chap4sec3}
 In order to select $Z\to\tauh\taul$ events, our basic selection includes events with exactly one $\tauh$ candidate and one lepton, a muon or an electron. The $\tauh$ and lepton pair need to have opposite charge. As we said, the presence of the lepton will be used as our tag, thus, a lepton trigger is required to be fired with an online requirement on the $p_{T}(\mu)\geq 20$ ($p_{T}(e)\geq 24$) GeV for 2015 data taking period. For 2016-2018 the requirement is $p_{T}(\mu,e)\geq 26$ GeV. The muons are required to pass a \textit{medium} ID requirement and the electron has to pass a \textit{tight} ID filter. Additionally, both muons and electrons have to pass an offline $p_T$ requirement to be greater than 27 GeV. Finally, the opening angle between the two visible objects $\Delta\phi(\tauh,l)\leq 2\pi/3$.
 
-Events containing b-jets are vetoed in order to reject $t\bar{t}$ events. Also an isolation criteria is required to be passed by the leptons: for the muon (electron), the scalar sum of the $p_T$ of the tracks within a cone of $\Delta R=0.3 (0.2)$ of the muon (electron) must be less than 0.06 times the muon (electron) $p_T$. Aditionally, for the electron, the sum of the calorimeter cluster energy in a cone of size $\Delta R=0.2$ must be 0.06 times the electron $p_T$. As we said in section \ref{chap4sec1}, we expect signal events to peak around $\Omega=1$, thus we select events where $\Omega\in (0,1.4)$. Fig.\ref{Fig9} shows the $\Omega$ distribution for $Z\to\tauh\mu$ final state.
+Events containing b-jets are vetoed in order to reject $t\bar{t}$ events. Also an isolation criterion is required to be passed by the leptons: for the muon (electron), the scalar sum of the $p_T$ of the tracks within a cone of $\Delta R=0.3 (0.2)$ of the muon (electron) must be less than 0.06 times the muon (electron) $p_T$. Additionally, for the electron, the sum of the calorimeter cluster energy in a cone of size $\Delta R=0.2$ must be 0.06 times the electron $p_T$. As we said in section \ref{chap4sec1}, we expect signal events to peak around $\Omega=1$, thus we select events where $\Omega\in (0,1.4)$. Fig.\ref{Fig9} shows the $\Omega$ distribution for $Z\to\tauh\mu$ final state.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\textwidth]{figures/Fig9}
@@ -143,7 +143,7 @@ where $\text{RQCD}\equiv\frac{\text{MJBG}_{\text{CROS}}}{\text{MJBG}_{\text{CRSS
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.5\textwidth]{figures/Fig13}
-	\caption{Diagram showing the regions defined to estimate MJ background contribution on SROS region. This data-driven method is also known as ABCD method.}
+	\caption{Diagram showing the regions defined to estimate MJ background contribution in the SROS region. This data-driven method is also known as ABCD method.}
 	\label{Fig13}
 \end{figure}
  
