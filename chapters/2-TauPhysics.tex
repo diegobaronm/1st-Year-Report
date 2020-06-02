@@ -1,4 +1,4 @@
-\chapter{Tau physics overview}\label{chap:relatedwork}
+\chapter{The Standard Model and Lepton Universality Tests}\label{chap:relatedwork}
 This chapter begins with a short description of the Standard Model (SM), followed by a discussion about the Z boson production at the Large Hadron collider. Finally, a review of the tau lepton properties is presented. These include the nature of this particle, its interactions with the other SM particles, its main decay modes and the physics implications of the so called Lepton Universality (LU), one of the SM predictions.  
 \section{The Standard Model}\label{chap2secm1}
 The Standard Model (SM) is a theory about the fundamental constituents of matter and the interactions between them. Four fundamental interactions are known: gravitational, electromagnetic, weak and strong interactions. The SM is based on the framework of Quantum Field Theory (QFT), in which particles are classified as \textit{bosons} or \textit{fermions}, which corresponds to particles with integer and half-integer spin respectively. Fermions form matter and they can interact with each other via the exchange of bosons, which are the force carriers. Three fundamental forces are described by the SM. The strong interaction is explained by a theory called quantum chromodynamics (QCD) \cite{GellMann:1964nj} which relies on the principle of gauge invariance under the $\text{SU(3)}_c$ group. The force carriers of the QCD are called \textit{gluons}. The electromagnetic and weak interactions are unified in the SM and this theory is known as the electroweak (EW) theory \cite{Glashow:1967rx,Salam:1968rm,Weinberg:1967tq}. In this sector of the SM the fields are invariant under $\text{SU(2)}_L\times\text{U(1)}_Y$ group. The force carriers of the weak and electromagnetic interactions are the $\text{Z}^0,\text{W}^\pm$ bosons and the \textit{photon} ($\gamma$) respectively. The gravitational interaction is not described by the SM.
@@ -26,7 +26,11 @@ Since the discovery of the Z boson at the UA1 and UA2 experiments \cite{Arnison:
 	\caption{Z boson branching fractions.}
 	\label{Table0}
 \end{table}
-In contrast to electron-positron colliders, the momentum of partons in proton-proton collisions is not precisely known. Thus, parton density functions (PDFs) are used to describe the proton structure in a phenomenological way. These functions are written as $f_{a/A}(x,Q^2)$ and represent the probability density for a parton $a$ to have a fraction $x=\frac{p_a}{p_A}$ of the proton momentum $p_A$. $Q$ is the energy scale of the scattering process. A diagram of the production of the Z boson in proton-proton collisions is shown in Fig.\ref{Fig15}. 
+In contrast to electron-positron colliders, the momentum of partons in proton-proton collisions is not precisely known. Thus, parton density functions (PDFs) are used to describe the proton structure in a phenomenological way. These functions are written as $f_{a/A}(x,Q^2)$ and represent the probability density for a parton $a$ to have a fraction $x=\frac{p_a}{p_A}$ of the proton momentum $p_A$. $Q$ is the energy scale of the scattering process. In this case, the cross section of two protons going to a final state $n$ will be
+\begin{equation}
+	\sigma_{p_Ap_B\to n}=\sum_{q}\int dz_adx_b f_{a/A}(x_a,Q^2) f_{b/B}(x_b,Q^2)\times [\sigma_0+\alpha_s\sigma_1+\dots]_{ab\to n}.
+\end{equation}
+The sum is made over all the partons. $\sigma_0$ is the tree level parton-parton cross section and $\sigma_1$ are the QCD corrections to first order. A diagram of the production of the Z boson in proton-proton collisions is shown in Fig.\ref{Fig15}. 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.6\textwidth]{figures/Fig15}
@@ -35,7 +39,7 @@ In contrast to electron-positron colliders, the momentum of partons in proton-pr
 \end{figure}
 The main process contributing to Z boson production is the Drell-Yan process, where a quark-antiquark ($q\bar{q}$) pair annihilate, produce a Z boson and it subsequently decays into a pair of fermions. In this case, the transverse momentum ($\pt$) of the Z boson comes from the intrinsic $\pt$ of the partons. Nevertheless, this has been experimentally determined with a value of $<k_T>=0.76$ GeV \cite{Ellis:1991qj} and is not large enough to explain the measured Z boson $\pt$ distribution that peaks at a few GeV and has a tail that extends at values $\pt\gg m_Z$ \cite{Abbott:1999yd,Affolder:1999jh}.
 
-To explain this kinematic feature we have to look at the other ways the Z boson can be produced in $pp$ collisions. First quark-gluon ($qg$) scattering, where the Z boson recoils against the quark radiated in the final state, this is called \textit{final state radiation} (FSR), this process is illustrated in Fig.\ref{Fig16a}. In the other hand, we could also have a gluon being radiated before $q\bar{q}$ annihilation takes place, having the Z boson recoiling against what is called \textit{initial state radiation} (ISR), as is shown in Fig.\ref{Fig16b}. Partons generated in ISR and FSR pair with other quarks and gluons to form showers of \textit{hadrons} (this showers are usually called jets) that are subsequently detected as energy deposits in the calorimeters of the particle detectors. 
+To explain this kinematic feature we have to look at the other ways the Z boson can be produced in $pp$ collisions. First quark-gluon ($qg$) scattering, where the Z boson recoils against the quark radiated in the final state, this process is illustrated in Fig.\ref{Fig16a}. In the other hand, we could also have a gluon being radiated before $q\bar{q}$ annihilation takes place, having the Z boson recoiling against what is called \textit{initial state radiation} (ISR), as is shown in Fig.\ref{Fig16b}. Partons generated in $qg$ scattering and FSR pair with other quarks and gluons to form showers of \textit{hadrons} (this showers are usually called jets) that are subsequently detected as energy deposits in the calorimeters of the particle detectors. 
 \begin{figure}[ht]
 	\centering
 	\subfloat[]{\label{Fig16a}{\includegraphics[width=0.50\textwidth]{figures/Fig16a}}}\hfill
@@ -54,7 +58,7 @@ e^+ + e^- \to \tau^+ \tau^- \to e^\pm + \mu^\mp + 4\nu,
 \end{equation}	
 were later explored to derive tau mass and spin, confirming the existence of a third generation of leptons. 
 
-The tau has a mass of $1776.86 \pm 0.12$ MeV, which allows it to decay not only into the other lighter lepton generations (\textit{leptonic tau decays}), as shown on Fig.\ref{Fig1}  , but into hadrons. As we said on section \ref{chap2sec0} hadrons are particles made of quarks. All the decay channels of the tau containing hadrons in the final state are called \textit{hadronic tau decays}. Strictly speaking this is a semi-hadronic decay mode because of the presence of the neutrino. Nonetheless, from now on we will refer to these processes with the commonly used term \textit{hadronic tau decays}. An example of this decay mode is shown in Fig.\ref{Fig2}.
+The tau has a mass of $1776.86 \pm 0.12$ MeV \cite{PhysRevD.98.030001}, which allows it to decay not only into the other lighter lepton generations (\textit{leptonic tau decays}), as shown on Fig.\ref{Fig1}  , but into hadrons. As we said on section \ref{chap2sec0} hadrons are particles made of quarks. All the decay channels of the tau containing hadrons in the final state are called \textit{hadronic tau decays}. Strictly speaking this is a semi-hadronic decay mode because of the presence of the neutrino. Nonetheless, from now on we will refer to these processes with the commonly used term \textit{hadronic tau decays}. An example of this decay mode is shown in Fig.\ref{Fig2}.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.6\textwidth]{figures/Fig1}
@@ -86,7 +90,7 @@ In fact, this naive estimation is not bad. Actual values for the leptonic branch
 \\
 \beta(\tau\to \mu\nu_\mu\nu_\tau)&=17.39\pm 0.04\%.
 \end{align}
-The small difference is due to the mass difference between the muon and the electron.
+The reason of the difference in the estimation is that in the case of the W decaying to quark pairs, there is a non-negligible contribution that comes of the mixing from quark pairs of different generations. In particular, in the tau decay we are talking about the contribution from up-strange quark couplings. This is the Cabibbo suppressed amplitude and it is proportional to the $V_{us}$ component of the CKM matrix \cite{Davier:2005xq}. The small difference between the leptonic branching fractions is due to the mass difference between the muon and the electron.
 
 On the other hand, the hadronic decays of the tau are more varied and can contain many more particles in the final states. The vast majority of hadronic tau decays have charged or neutral pions in the final states, but more exotic decays including kaons also happen. Branching fractions for the most important tau hadronic decays are showed in Table \ref{Table1}.
 \begin{table}[]
@@ -101,11 +105,11 @@ On the other hand, the hadronic decays of the tau are more varied and can contai
 	$3\pi^\pm \geq 1\pi^0 \nu_\tau$& 4.6\%               \\ \hline
 	others						   & 5.5\%               \\ \hline
 \end{tabular}
-	\caption{Branching fractions for hadronic tau decay modes.}
+	\caption{Branching fractions for hadronic tau decay modes \cite{PhysRevD.98.030001}.}
 	\label{Table1}
 \end{table}
 \section{Lepton Universality}\label{chap2sec2}
-The SM predicts that all charged leptons $(e,\mu,\tau)$ interact via the electromagnetic and weak forces and explains that these interactions can be seen as the interchange of \textit{vector bosons}, the photon $(\gamma)$ and the W and Z bosons respectively. Specifically, in the SM the form of the interaction does not depend on the lepton generation. This feature of the SM is called \textit{lepton universality} and it can be understood as that physics processes for electrons, muons and taus are almost identical copies of each other (although some small discrepancies arise from the fact that lepton masses are different and strictly speaking lepton universality is not a exact symmetry). 
+The SM predicts that all charged leptons $(e,\mu,\tau)$ interact via the electromagnetic and weak forces and explains that these interactions can be seen as the interchange of \textit{vector bosons}, the photon $(\gamma)$ and the W and Z bosons respectively. Specifically, in the SM the form of the interaction does not depend on the lepton generation. This feature of the SM is called \textit{lepton universality} and it can be understood as that physical processes for electrons, muons and taus are almost identical copies of each other (although some small discrepancies arise from the fact that lepton masses). 
 
 For instance, tau leptonic decay widths present a great opportunity to test lepton universality hypothesis. If we start considering muon decay, at low energies we can consider this process to be a point like interaction well described by Fermi theory \cite{FermiTheory}. In this case, if we approximate the electron and neutrinos as being massless particles, a dimensionally correct expression for the width is of the form
 \begin{equation}
@@ -126,7 +130,7 @@ also that $\beta(\mu\to e\nu_e \nu_\mu)=1$ and taking into account eq.(\ref{eq6}
 \begin{equation}
 \frac{\tau_\tau}{\tau_\mu}=\frac{\beta(\tau\to e\nu_e \nu_\tau)}{\beta(\mu\to e\nu_e \nu_\mu)}\left(\frac{m_\mu}{m_\tau}\right)^5=(1.328\pm 0.004)\times 10^{-7}.
 \end{equation}
-This is consistent with the experimental lifetimes ratio of $(1.3227\pm 0.0005)\times10^{-7}$. This agreement on lifetimes that differ on 7 orders of magnitude is a good proof that lepton universality holds on W decays at the tau mass scale.
+This is consistent with the experimental lifetimes ratio of $(1.3227\pm 0.0005)\times10^{-7}$ \cite{Martin:1992rg}. This agreement on lifetimes that differ on 7 orders of magnitude is a good proof that lepton universality holds on W decays at the tau mass scale.
 
 Very precise tests of LU have been done by $e^-e^+$ colliders (LEP1, SLC and LEP2). Measurements of the ratios between the leptonic decay widths of the Z boson have been performed and are consistent with the SM \cite{ALEPH:2005ab}:
 \begin{align}
@@ -157,7 +161,7 @@ Furthermore, measurements from LHCb, BaBar and Belle experiments have shown cons
 	R_{D^\star}&=\frac{\beta(\bar{B}\to D^\star\tau^-\bar{\nu}_\tau)}{\beta(\bar{B}\to D^\star e^-\bar{\nu}_e)}.
 \end{align}
 The combined results for the different experiments are shown in Fig.\ref{Fig3}. These measurements represent a 3.08 $\sigma$
- deviation from the SM predictions, but even though they represent a hint of new physics, these results have to be taken with care since at this point it could be that systematic uncertainties are being underestimated or statistical deviations are larger than expected. In this matters, future analysis from experiments like LHCb and Belle with larger available datasets will be very important to untangle this situation.
+ deviation from the SM predictions, but even though they represent a hint of new physics, these results have to be taken with care since at this point it could be that statistical deviations are larger than expected. In this matters, future analysis from experiments like LHCb and Belle II with larger available datasets will be very important to untangle this situation.
  \begin{figure}[h]
  	\centering
  	\includegraphics[width=0.7\textwidth]{figures/Fig3}
