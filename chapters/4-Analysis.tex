@@ -97,15 +97,25 @@ Events containing b-jets are vetoed in order to reject $t\bar{t}$ events. Also a
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\textwidth]{figures/Fig9}
-	\caption{Distribution of $\Omega$ for $Z\to\tauh\mu$ final state. }
+	\caption{Distribution of $\Omega$ for $Z\to\tauh\mu$ final state. All the other cuts have been applied apart from the one being plotted.}
 	\label{Fig9}
 \end{figure}
-Adittionally, a cut on the reconstructed invariant mass ($\mreco$) of the event is made, the cut aims to pick events where the invariant mass is around the Z boson mass ($70\leq\mreco\leq 110$ GeV). The invariant mass of the final states is calculated depending on the event topology. For events where $\Omega\in [0,1]$ (\textit{in between events}),  $\mreco^{2}=(q_l+q_{\tauh}+q_{\nu_l}+q_{\nu_{\tauh}})^2$ and when the $\ptmiss$ is outside (\textit{outside events}), $(\mreco-5)^{2}=(q_l+q_{\tauh}+q_\nu)^2$. In the latter case we manually add 5 GeV to maintain our cuts consistent, since in this region the Z mass is underestimated. Fig.\ref{Fig10} shows the distribution of $\mreco$ for the in between and outside $Z\to\tauh\mu$ events. 
+Adittionally, a cut on the reconstructed invariant mass ($\mreco$) of the event is made, the cut aims to pick events where the invariant mass is around the Z boson mass ($70\leq\mreco\leq 110$ GeV). The invariant mass of the final states is calculated depending on the event topology. For events where $\Omega\in [0,1]$ (\textit{in between events}),
+\begin{equation}
+	\mreco^{2}=(q_l+q_{\tauh}+q_{\nu_l}+q_{\nu_{\tauh}})^2.
+	\label{eq35}
+\end{equation}
+When the $\ptmiss$ is outside (\textit{outside events}),
+\begin{equation}
+	(\mreco-5)^{2}=(q_l+q_{\tauh}+q_\nu)^2.
+	\label{eq36}
+\end{equation}
+The RHS of \eqref{eq35} and \eqref{eq36} are vector sums, where $q$ represents the four-momentum of each particle. In the latter case we manually add 5 GeV to maintain our cuts consistent, since in this region the Z mass is underestimated. Fig.\ref{Fig10} shows the distribution of $\mreco$ for the in between and outside $Z\to\tauh\mu$ events. 
 \begin{figure}[ht]
 	\centering
 	\subfloat[]{\label{Fig10a}{\includegraphics[width=0.50\textwidth]{figures/Fig10a}}}\hfill
 	\subfloat[]{\label{Fig10b}{\includegraphics[width=0.50\textwidth]{figures/Fig10b}}}
-	\caption{$\mreco$ distribution for the in between region (a) and the outside region (b).}
+	\caption{$\mreco$ distribution for the in between region (a) and the outside region (b). All the other cuts have been applied apart from the one being plotted.}
 	\label{Fig10}
 \end{figure}
 
@@ -114,7 +124,7 @@ In addition, for the $Z\to\tauh e$ final state, we add two cuts aimed to reject 
 	\centering
 	\subfloat[]{\label{Fig11a}{\includegraphics[width=0.50\textwidth]{figures/Fig11a}}}\hfill
 	\subfloat[]{\label{Fig11b}{\includegraphics[width=0.50\textwidth]{figures/Fig11b}}}
-	\caption{Distribution of the variables used for rejecting $\tauh$ fakes coming from electrons. On the right $m(e,\tauh)$ distribution (a) and on the left the eBDTScore distribution (b).}
+	\caption{Distribution of the variables used for rejecting $\tauh$ fakes coming from electrons. On the right $m(e,\tauh)$ distribution (a) and on the left the eBDTScore distribution (b). All the other cuts have been applied apart from the one being plotted.}
 	\label{Fig11}
 \end{figure}
 Finally, in order to measure the tau ID scale factors on the high-$p_T$ region we select events where $p_T(\tauh)\geq 45$ GeV. The $p_T$ distributions for $\tauh$ candidates are shown in Fig.\ref{Fig12} for the in between and outside regions.
@@ -122,7 +132,7 @@ Finally, in order to measure the tau ID scale factors on the high-$p_T$ region w
 	\centering
 	\subfloat[]{\label{Fig12a}{\includegraphics[width=0.50\textwidth]{figures/Fig12a}}}\hfill
 	\subfloat[]{\label{Fig12b}{\includegraphics[width=0.50\textwidth]{figures/Fig12b}}}
-	\caption{$p_T(\tauh)$ distribution for the in between (a) and outside (b) regions.}
+	\caption{$p_T(\tauh)$ distribution for the in between (a) and outside (b) regions. All the other cuts have been applied apart from the one being plotted.}
 	\label{Fig12}
 \end{figure} 
 \section{Multi Jet Background Estimation}
