@@ -1,13 +1,36 @@
 \chapter{Results}\label{chap5}
 In this section we present the preliminary results of the performance of the $\tauh$ identification algorithm using $\int\mathcal{L} dt=139.2$ fb$^{-1}$ of data recorded between 2015 and 2018.
-The correction factors are applied to simulation in order to match the efficiency observed in data. These correction factors are defined as the ratio between the efficiency measured in data and in simulation. For the present report, we present the value of the correction factors for \textit{Tight} ID working point for $\tauh$ candidates with $\pt$ above 45 GeV.
+The correction factors are applied to simulation in order to match the efficiency observed in data. These correction factors are defined as the ratio between the efficiency measured in data and in simulation.
+\begin{equation}
+C_{\text{ID}}=\frac{\mathcal{E}_{\text{Data}}}{\mathcal{E}_{\text{MC}}}.
+\end{equation}
+For this work, we present a preview of the value of the correction factors for \textit{Tight} ID working point for $\tauh$ candidates with $\pt$ above 45 GeV. Since this report is about a work in progress and we have not studied yet the effect of the systematic uncertainties on our results, we will take another approach on estimating the correction factors.
 
+\section{Systematic uncertainties}
+The values for the systematic uncertainties used to report the value of the correction factors are presented in Table \ref{Tab5}. These numbers have been provided by Terry Wyatt and Sam Dysch, based on their previous experience working on analysis that make use of $Z\to\tauh l$ events on a similar phase space.
+\begin{table}[]
+	\centering
+	\begin{tabular}{cc}
+		\hline
+		\multicolumn{1}{|c|}{Source}        & \multicolumn{1}{c|}{Sys. Uncertainty (\%)} \\ \hline
+		Electron ID efficiency              & 0.8                                        \\
+		Muon ID Efficiency                  & 0.2                                        \\
+		Electron $\pt$ scale and resolution & 0.4                                        \\
+		Muon $\pt$ scale and resolution     & 0.3                                        \\
+		Tau $\pt$ scale                     & 1.9                                        \\
+		Electron trigger efficiency         & 0.1                                        \\
+		Muon trigger efficiency             & 0.4                                        \\ 
+		Integrated luminosity               & 1.7                                        \\ \hline
+	\end{tabular}
+	\caption{Systematic uncertainties used in this study.}
+	\label{Tab5}
+\end{table}
 \section{$\mu\tau$ Final state}
 We define the simulation correction factor as
 \begin{equation}
-	C_{\text{Tight-ID}}=\frac{\mathcal{E}_{\text{Data}}}{\mathcal{E}_{\text{MC}}}.
+	C_{\text{Tight-ID}}=\frac{N_{\text{Data}}}{N_{\text{MC}}}.
 \end{equation}
-The value obtained for the final state that contains one muon and a $\tauh$ candidate is
+Where N is the total number of events that pass our selection. The value obtained for the final state that contains one muon and a $\tauh$ candidate is
 
 All the distributions of the relevant cuts for selecting our signal events after applying all the other cuts are shown in Fig.\ref{Fig17} (Appendix A).
 \section{$e\tau$ Final state}
