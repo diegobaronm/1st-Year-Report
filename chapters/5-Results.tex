@@ -30,7 +30,26 @@ We define the simulation correction factor as
 \begin{equation}
 	C_{\text{Tight-ID}}=\frac{N_{\text{Data}}}{N_{\text{MC}}}.
 \end{equation}
-Where N is the total number of events that pass our selection. The number of events that gets selected after all the cuts and without the $\pt(\tauh)>45$ GeV requirement are shown in TABLE. The value obtained for $C_{\text{Tight-ID}}$ in the final state that contains one muon and a $\tauh$ candidate is
+Where N is the total number of events that pass our selection. The number of events that gets selected after all the cuts and without the $\pt(\tauh)>45$ GeV requirement are shown in TABLE.
+\begin{table}[H]
+	\centering
+	\begin{tabular}{ccc}
+		\hline
+		\multicolumn{1}{c|}{Samples} & \multicolumn{1}{c|}{Before $\pt(\tauh)$\textgreater{}45 GeV cut} & After all cuts      \\ \hline
+		Z$\to\tau\tau$               & 34224.49$\pm$420.83                                              & 11899.10$\pm$182.66 \\
+		Z+jets                       & 543.21$\pm$11.06                                                 & 98.92$\pm$4.69      \\
+		W+jets                       & 586.70$\pm$77.99                                                 & 37.11$\pm$18.75     \\
+		ttbar                        & 339.94$\pm$6.84                                                  & 88.44$\pm$3.42      \\
+		Diboson                      & 470.69$\pm$4.72                                                  & 187.07$\pm$2.82     \\
+		Single top                   & 63.03$\pm$3.07                                                   & 14.35$\pm$1.50      \\
+		MJ                           & 2386.06$\pm$143.76                                               & 231.43$\pm$75.25    \\ \hline
+		\multicolumn{1}{c|}{MC Total}   & \multicolumn{1}{c|}{38634.12$\pm$668.27}                         & 12556.42$\pm$289.09 \\ \hline
+		\multicolumn{1}{c|}{Data}    & \multicolumn{1}{c|}{39101$\pm$198}                               & 12692$\pm$112       \\ \hline
+	\end{tabular}
+	\caption{}
+	\label{tab:my-table}
+\end{table}
+The value obtained for $C_{\text{Tight-ID}}$ in the final state that contains one muon and a $\tauh$ candidate is
 
 All the distributions of the relevant cuts for selecting our signal events after applying all the other cuts are shown in Fig.\ref{Fig17} (Appendix A).
 \section{$e\tau$ Final state}
