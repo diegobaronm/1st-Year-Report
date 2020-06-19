@@ -28,32 +28,55 @@ The values for the systematic uncertainties used to report the value of the corr
 \section{$\mu\tau$ Final state}
 We define the simulation correction factor as
 \begin{equation}
-	C_{\text{Tight-ID}}=\frac{N_{\text{Data}}}{N_{\text{MC}}}.
+	C_{\text{Tight-ID}}=\frac{N_{\text{MC}}}{N_{\text{DATA}}}.
 \end{equation}
-Where N is the total number of events that pass our selection. The number of events that gets selected after all the cuts and without the $\pt(\tauh)>45$ GeV requirement are shown in TABLE.
+Where N is the total number of events that pass our selection. The number of events that gets selected after all the cuts and without the $\pt(\tauh)>45$ GeV requirement are shown in Table \ref{Table6}.
 \begin{table}[H]
 	\centering
+	\resizebox{\columnwidth}{!}{%
 	\begin{tabular}{ccc}
 		\hline
 		\multicolumn{1}{c|}{Samples} & \multicolumn{1}{c|}{Before $\pt(\tauh)$\textgreater{}45 GeV cut} & After all cuts      \\ \hline
-		Z$\to\tau\tau$               & 34224.49$\pm$420.83                                              & 11899.10$\pm$182.66 \\
-		Z+jets                       & 543.21$\pm$11.06                                                 & 98.92$\pm$4.69      \\
-		W+jets                       & 586.70$\pm$77.99                                                 & 37.11$\pm$18.75     \\
-		ttbar                        & 339.94$\pm$6.84                                                  & 88.44$\pm$3.42      \\
-		Diboson                      & 470.69$\pm$4.72                                                  & 187.07$\pm$2.82     \\
-		Single top                   & 63.03$\pm$3.07                                                   & 14.35$\pm$1.50      \\
-		MJ                           & 2386.06$\pm$143.76                                               & 231.43$\pm$75.25    \\ \hline
-		\multicolumn{1}{c|}{MC Total}   & \multicolumn{1}{c|}{38634.12$\pm$668.27}                         & 12556.42$\pm$289.09 \\ \hline
-		\multicolumn{1}{c|}{Data}    & \multicolumn{1}{c|}{39101$\pm$198}                               & 12692$\pm$112       \\ \hline
+		Z$\to\tau\tau$               & 34224.49$\pm$420.83(stat)$\pm$581.81(lumi)$\pm$675.88(sys)                                              & 11899.10$\pm$182.66(stat)$\pm$202.28(lumi)$\pm$234.99(sys) \\
+		Z+jets                       & 543.21$\pm$11.06(stat)$\pm$9.23(lumi)$\pm$10.73(sys)                                                 & 98.92$\pm$4.69(stat)$\pm$1.68(lumi)$\pm$1.95(sys)      \\
+		W+jets                       & 586.70$\pm$77.99(stat)$\pm$9.97(lumi)$\pm$11.59(sys)                                                 & 37.11$\pm$18.75(stat)$\pm$0.63(lumi)$\pm$0.73(sys)     \\
+		ttbar                        & 339.94$\pm$6.84(stat)$\pm$5.78(lumi)$\pm$6.70(sys)                                                  & 88.44$\pm$3.42(stat)$\pm$1.50(lumi)$\pm$1.75(sys)      \\
+		Diboson                      & 470.69$\pm$4.72(stat)$\pm$8.00(lumi)$\pm$9.30(sys)                                                  & 187.07$\pm$2.82(stat)$\pm$3.18(lumi)$\pm$3.69(sys)     \\
+		Single top                   & 63.03$\pm$3.07(stat)$\pm$1.07(lumi)$\pm$1.24(sys)                                                   & 14.35$\pm$1.50(stat)$\pm$0.24(lumi)$\pm$0.28(sys)      \\
+		MJ                           & 2386.06$\pm$143.76(stat)$\pm$40.56(lumi)$\pm$47.12(sys)                                               & 231.43$\pm$75.25(stat)$\pm$3.93(lumi)$\pm$4.57(sys)    \\ \hline
+		\multicolumn{1}{c|}{MC Total}   & \multicolumn{1}{c|}{38634.12$\pm$668.27(stat)$\pm$656.78(lumi)$\pm$762.96(sys)}                         & 12556.42$\pm$289.09(stat)$\pm$213.46(lumi)$\pm$247.97(sys) \\ \hline
+		\multicolumn{1}{c|}{Data}    & \multicolumn{1}{c|}{39101$\pm$198(stat)$\pm$665(lumi)$\pm$772(sys)}                               & 12692$\pm$112(stat)$\pm$216(lumi)$\pm$251(sys)      \\ \hline
 	\end{tabular}
+	}
 	\caption{}
-	\label{tab:my-table}
+	\label{Table6}
 \end{table}
 The value obtained for $C_{\text{Tight-ID}}$ in the final state that contains one muon and a $\tauh$ candidate is
 
 All the distributions of the relevant cuts for selecting our signal events after applying all the other cuts are shown in Fig.\ref{Fig17} (Appendix A).
 \section{$e\tau$ Final state}
-The value obtained for $C_{\text{Tight-ID}}$ in the final state that contains one electron and a $\tauh$ candidate is
+For the final state that contains one electron and a $\tauh$ candidate, the number of events that gets selected after all the cuts and without the $\pt(\tauh)>45$ GeV requirement are shown in Table \ref{Table7}.
+\begin{table}[H]
+	\centering
+	\resizebox{\columnwidth}{!}{%
+	\begin{tabular}{ccc}
+		\hline
+		\multicolumn{1}{c|}{Samples} & \multicolumn{1}{c|}{Before $\pt(\tauh)$\textgreater{}45 GeV cut} & After all cuts     \\ \hline
+		Z$\to\tau\tau$               & 25269.30$\pm$362.92(stat)$\pm$429.58(lumi)$\pm$531.26(sys)                                              & 8787.97$\pm$150.77(stat)$\pm$149.39(lumi)$\pm$184.76(sys) \\
+		Z+jets                       & 682.15$\pm$12.69(stat)$\pm$11.60(lumi)$\pm$14.34(sys)                                                 & 74.07$\pm$4.23(stat)$\pm$1.26(lumi)$\pm$1.56(sys)     \\
+		W+jets                       & 348.28$\pm$56.10(stat)$\pm$5.92(lumi)$\pm$7.32(sys)                                                 & 8.08$\pm$8.08(stat)$\pm$0.14(lumi)$\pm$0.17(sys)      \\
+		ttbar                        & 255.55$\pm$6.05(stat)$\pm$4.34(lumi)$\pm$5.37(sys)                                                  & 56.63$\pm$2.86(stat)$\pm$0.96(lumi)$\pm$1.19(sys)     \\
+		Diboson                      & 384.25$\pm$4.19(stat)$\pm$6.53(lumi)$\pm$8.08(sys)                                                  & 152.92$\pm$2.58(stat)$\pm$2.60(lumi)$\pm$3.21(sys)    \\
+		Single top                   & 47.48$\pm$2.71(stat)$\pm$0.81(lumi)$\pm$1.00(sys)                                                   & 11.29$\pm$1.32(stat)$\pm$0.19(lumi)$\pm$0.24(sys)     \\
+		MJ                           & 1530.54$\pm$101.21(stat)$\pm$26.02(lumi)$\pm$32.18(sys)                                               & 229.34$\pm$65.04(stat)$\pm$3.90(lumi)$\pm$4.82(sys)   \\ \hline
+		\multicolumn{1}{c|}{Total}   & \multicolumn{1}{c|}{28487.55$\pm$545.87(stat)$\pm$484.29(lumi)$\pm$598.91(sys)}                         & 9320.31$\pm$234.87(stat)$\pm$158.44(lumi)$\pm$195.95(sys) \\ \hline
+		\multicolumn{1}{c|}{Data}    & \multicolumn{1}{c|}{29723$\pm$172(stat)$\pm$505(lumi)$\pm$625(sys)}                               & 9559$\pm$98(stat)$\pm$162(lumi)$\pm$201(sys)        \\ \hline
+	\end{tabular}
+	}
+	\caption{}
+	\label{Table 7}
+\end{table}
+The value obtained for $C_{\text{Tight-ID}}$ is
 
 All the distributions of the relevant cuts for selecting our signal events after applying all the other cuts are shown in Fig.\ref{Fig18} (Appendix A).
 \section{Discussion}
