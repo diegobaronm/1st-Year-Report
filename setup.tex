@@ -6,7 +6,7 @@
     % http://tex.stackexchange.com/questions/44694/fontenc-vs-inputenc
     \usepackage[T1]{fontenc}  % 8-bit fonts, improves handling of hyphenations
     \usepackage{lmodern}
-    \usepackage[utf8x]{inputenc}
+    \usepackage[utf8]{inputenc}
     \usepackage{slashed}
     % provides `old' commands for table of contents. Eases the ability to switch
     % between book and scrbook
@@ -17,7 +17,9 @@
     \newcommand{\pt}{p_\text{T}}
     \newcommand{\ptmiss}{\slashed{E}_T}
     \newcommand{\mreco}{m_{\text{reco}}}
-	
+    \usepackage[english]{babel}
+	\usepackage[style=numeric, sorting=none,,backend=biber]{biblatex}
+	\addbibresource{bib/topic1.bib}
     % ------------------- layout, default -------------------
     % adjust the style of float's captions, separated from text to improve readabilty
     \usepackage[labelfont=bf, labelsep=colon, format=hang, textfont=singlespacing]{caption}
@@ -37,9 +39,10 @@
 
     % Uncomment the following line if you switch from scrbook to book
     % and comment the setkomafont line
-    %\usepackage{titlesec}  % remove "Chapter" from the chapter title
-    %\titleformat{\chapter}[hang]{\bfseries\huge}{\thechapter}{2pc}{\huge}
-    \setkomafont{chapter}{\normalfont\bfseries\huge}
+    \usepackage{titlesec}  % remove "Chapter" from the chapter title
+    \titleformat{\chapter}[hang]{\bfseries\huge}{\thechapter}{2pc}{\huge}
+    \titlespacing*{\chapter}{0pt}{-50pt}{40pt}
+    %\setkomafont{chapter}{\normalfont\bfseries\huge}
 
     \usepackage{setspace}  % Line spacing
     \onehalfspacing

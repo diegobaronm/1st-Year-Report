@@ -1,18 +1,16 @@
 % documentclass options:
-\documentclass[11pt,DIV=16,
+\documentclass[11pt,
   a4paper,
   parskip=half, % This is some extra vertical space between paragraphs, the suggestion is 2cm which is really ugly, so we use what koma script gives us
   % you can also set it to full for even more space. But there is a bad tex style decision: parskip also changes the spacing between listitems such as
-  % enumerate and itemize. For this purpose we include the enumitem package and set itemsep=.5em, of course you can change this
-  BCOR=10mm,
-  ngerman, % BCOR is binding correction
+  % enumerate and itemize. For this purpose we include the enumitem package and set itemsep=.5em, of course you can change this % BCOR is binding correction
   % if you'd rather have a one sided thesis, add `oneside' to the documentclass
   % oneside,
   % ngerman is needed for hyphenation if the thesis contains parts written in German, switch order with english if you write mainly in English.
   % Remember to change order in the babel package (below) as well.
   % Last language is the preferred one.
-  english]{scrbook}
-\usepackage[ngerman,english]{babel} % If you write mainly in English change order to ngerman, english. Also change that in the documentclass options above.
+  english]{report}
+\usepackage[english]{babel} % If you write mainly in English change order to ngerman, english. Also change that in the documentclass options above.
 % Include of titling must happen before \title etc.
 % that's why it's not in setup.tex
 \usepackage{titling}
@@ -29,6 +27,12 @@
 % Change to your adivers
 % include all packages and define commands in setup.tex
 \input{setup}
+\addtolength\textwidth{5cm}
+\addtolength\oddsidemargin{-2.5cm}
+\addtolength\evensidemargin{-2.5cm}
+
+\addtolength\textheight{4cm}
+\addtolength\topmargin{-2.cm}
 \begin{document}
     \pagestyle{empty} % no header and no page number
     % disable hyper links to remove warning "destination with same identifier"
@@ -39,21 +43,23 @@
     \input{chapters/0_0-titlepage_en}
     %\input{chapters/0_0-titlepage_de}
 
-    \pagestyle{plain} % remove chapter name from top, page number at the bottom
+    \pagestyle{headings} % remove chapter name from top, page number at the bottom
     % use \pagestyle{headings} for having the chapter on top of the pages
     % if you wang a more fancy header use \usepackage[automark,headsepline]{scrlayer-scrpage}
     % and read about it in the KOMA script documentation, https://www.ctan.org/pkg/koma-script
-    \frontmatter  % roman page numbers
+	\pagenumbering{roman}
     %\input{chapters/0_1-declaration}
-    %\input{chapters/0_2-abstract}
+    \input{chapters/0_2-abstract}
     \tableofcontents
     \listoffigures
     \listoftables
     %\listofalgorithms
     \hypersetup{pageanchor=true}  % re-enable hyperlinking
-
-    \mainmatter  % Arabic page numbers
+    
+    
+	
     \input{chapters/1-introduction}
+    \pagenumbering{arabic}
     \input{chapters/2-TauPhysics}
     \input{chapters/3-LHCandATLAS}
     \input{chapters/4-Analysis}
@@ -65,12 +71,15 @@
     % don't forget to remove before submission!
     %\input{todo_list}
 
-    \bibliographystyle{abbrv}
-    \bibliography{bib/topic1}
+    %\bibliographystyle{unsrt}
+
+    %\bibliography{bib/topic1}
     % bibliography is not in the table of contents per default, add it manually
     % enable the \renewcommand for german header
     % \renewcommand{\bibname}{Literaturverzeichnis}
-    \addcontentsline{toc}{chapter}{Bibliography}
+    %\addcontentsline{toc}{chapter}{Bibliography}
+    
+    \printbibliography[heading=bibintoc]
     \newpage
     \input{chapters/appendix}
     \thispagestyle{empty}
