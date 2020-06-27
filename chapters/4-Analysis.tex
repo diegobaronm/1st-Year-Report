@@ -33,7 +33,7 @@ p_{T_{\nu}}&=\ptmiss \cos(\Delta\phi(\tau_{\text{closer}},\ptmiss)),
 	\centering
 	\subfloat[]{\label{Fig7a}{\includegraphics[width=0.49\textwidth]{figures/Fig7a}}}\hfill
 	\subfloat[]{\label{Fig7b}{\includegraphics[width=0.49\textwidth]{figures/Fig7b}}}
-	\caption{The two different types of topologies that define signal events. On the right, when the missing energy is between the visible objects two neutrinos are assumed to be responsible for all the missing energy. On the left, only one neutrino is assumed to be flying on the direction of the visible object closest to the missing energy.}
+	\caption{The two different types of topologies that define signal events. On the left, when the missing energy is between the visible objects two neutrinos are assumed to be responsible for all the missing energy. On the right, only one neutrino is assumed to be flying on the direction of the visible object closest to the missing energy.}
 	\label{Fig7}
 \end{figure}
 where $\tau_{closer}$ stands for the visible object closest to the direction of the missing energy.
@@ -68,7 +68,7 @@ Thus, $\Omega$ is a continuous variable that give us information on the topology
 	\caption{Graphical representation of the different values of $\Omega$ depending on the region where the $\ptmiss$ is located in the event.}
 	\label{Fig8}
 \end{figure}
-As we will see later the event classification into this two different type of topologies will allow us to reconstruct and exploit kinematical variables as the invariant mass of the di-tau system, the Z boson transverse momentum ($Z_{p_T}$) and the angular distribution of the objects in the event.
+As we will see later the event classification into these different types of topologies will allow us to reconstruct and exploit kinematical variables as the invariant mass of the di-tau system, the Z boson transverse momentum ($Z_{p_T}$) and the angular distribution of the objects in the event.
 \section{Monte Carlo and Data Samples}
 The data used for this study has been recorded during the Run-II of the LHC. It corresponds to the 2015-2018 data taking period, the total integrated luminosity corresponds to 139.2 $\text{fb}^{-1}$ of proton-proton collisions at a centre-of-mass energy of $\sqrt{s}=13$ TeV.
 
@@ -93,11 +93,11 @@ Monte Carlo (MC) samples are used for signal and background simulation. For $Z\t
 \section{Event Selection}\label{chap4sec3}
 In order to select $Z\to\tauh\taul$ events, our basic selection includes events with exactly one $\tauh$ candidate and one lepton, a muon or an electron. The $\tauh$ and lepton pair need to have opposite charge. As we said, the presence of the lepton will be used as our tag, thus, a lepton trigger is required to be fired with an online requirement on the $p_{T}(\mu)\geq 20$ ($p_{T}(e)\geq 24$) GeV for 2015 data taking period. For 2016-2018 the online requirement is $p_{T}(\mu,e)\geq 26$ GeV. The muons are required to pass a \textit{medium} ID requirement and the electron has to pass a \textit{tight} ID filter. Additionally, both muons and electrons have to pass an offline $p_T$ requirement to be greater than 27 GeV. Finally, the opening angle between the two visible objects $\Delta\phi(\tauh,l)\leq 2\pi/3$.
 
-Events containing b-jets are vetoed in order to reject $t\bar{t}$ events. Also an isolation criterion is required to be passed by the leptons: for the muon (electron), the scalar sum of the $p_T$ of the tracks within a cone of $\Delta R=0.3 (0.2)$ of the muon (electron) must be less than 0.06 times the muon (electron) $p_T$. Additionally, for the electron, the sum of the calorimeter cluster energy in a cone of size $\Delta R=0.2$ must be 0.06 times the electron $p_T$. As we said in section \ref{chap4sec1}, we expect signal events to peak around $\Omega=1$, thus we select events where $\Omega\in (0,1.4)$. Fig.\ref{Fig9} shows the $\Omega$ distribution for $Z\to\tauh\mu$ final state.
+Events containing b-jets are vetoed in order to reject $t\bar{t}$ events. Also an isolation criterion is required to be passed by the leptons: for the muon (electron), the scalar sum of the $p_T$ of the tracks within a cone of $\Delta R=0.3 (0.2)$ of the muon (electron) must be less than 0.06 times the muon (electron) $p_T$. Additionally, for the electron, the sum of the calorimeter cluster energy in a cone of size $\Delta R=0.2$ must be 0.06 times smaller than the electron $p_T$. As we said in section \ref{chap4sec1}, we expect signal events to peak around $\Omega=1$, thus we select events where $\Omega\in (0,1.4)$. Fig.\ref{Fig9} shows the $\Omega$ distribution for $Z\to\tauh\mu$ final state.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\textwidth]{figures/Fig9}
-	\caption{Distribution of $\Omega$ for $Z\to\tauh\mu$ final state. All the other cuts have been applied apart from the one being plotted.The ATLAS data are shown as points with error bars, showing the statistical uncertainties. The detector-level predictions are shown as the shaded histograms, with the colour code as given on the plots.The region between the vertical dashed red lines is included in the final final candidate event sample by the selection criterion on the quantity plotted. The lower section of each plot shows the ratio of data to prediction. The uncertainties on the predictions represent the MC statistical and uncertainties. These uncertainties are shown as blue shaded regions in the ratio plots.}
+	\caption{Distribution of $\Omega$ for $Z\to\tauh\mu$ final state. All the other cuts have been applied apart from the one being plotted.The ATLAS data are shown as points with error bars, showing the statistical uncertainties. The detector-level predictions are shown as the shaded histograms, with the colour code as given on the plots.The region between the vertical dashed red lines is included in the final final candidate event sample by the selection criterion on the quantity plotted. The lower section of each plot shows the ratio of data to prediction. The uncertainties on the predictions represent the MC statistical uncertainties. These uncertainties are shown as blue shaded regions.}
 	\label{Fig9}
 \end{figure}
 Additionally, a cut on the reconstructed invariant mass ($\mreco$) of the event is made, the cut aims to pick events where the invariant mass is around the Z boson mass ($70\leq\mreco\leq 110$ GeV). The invariant mass of the final states is calculated depending on the event topology. For events where $\Omega\in [0,1]$ (\textit{in-between events}),
@@ -140,7 +140,7 @@ As we said previously, $\tauh$ candidates are seeded by jets, thus, QCD events r
 \begin{equation}
 \text{MJBG}_{\text{SS}}=\text{Data}_{\text{SS}}-\text{Signal}_{\text{SS}}-\text{EWBG}_{\text{SS}},
 \end{equation}
- To study the residual charge correlation, we define a control region (CR) where the MJ background is enhanced. This region is defined by events that fail either the lepton isolation criteria or the $\tauh$ ID requirement of tauRNNScore$>0.4\, (0.55)$ for 1-prong (3-prong) $\tauh$ candidates and have the same other kinematic features of the signal region (SR) described in section \ref{chap4sec3}. A diagram showing the four regions just defined is shown in Fig.\ref{Fig13}. Now, if charge correlation is the same in SR and CR, we have:
+ To study the residual charge correlation, we define a control region (CR) where the MJ background is enhanced. This region is defined by events that fail either the lepton isolation criteria or the $\tauh$ ID requirement of tauRNNScore$>0.4\, (0.55)$ for 1-prong (3-prong) $\tauh$ candidates and have the same other kinematic features of the signal region (SR) described in section \ref{chap4sec3}. A diagram showing the four regions just defined is shown in Fig.\ref{Fig13}. Now, if charge correlation are the same in SR and CR, we have:
  \begin{equation}
  \frac{\text{MJBG}_{\text{SROS}}}{\text{MJBG}_{\text{SRSS}}}=\frac{\text{MJBG}_{\text{CROS}}}{\text{MJBG}_{\text{CRSS}}},
  \end{equation}
