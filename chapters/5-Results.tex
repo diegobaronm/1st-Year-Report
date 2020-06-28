@@ -2,7 +2,7 @@
 In this section we present the preliminary results of the performance of the $\tauh$ identification algorithm using $\int\mathcal{L} dt=139.2$ fb$^{-1}$ of data recorded between 2015 and 2018.
 The correction factors are applied to simulation in order to match the efficiency observed in data. These correction factors are defined as the ratio between the efficiency measured in data and in simulation.
 \begin{equation}
-C_{\text{ID}}=\frac{\mathcal{E}_{\text{Data}}}{\mathcal{E}_{\text{MC}}}.
+C_{\text{ID}}=\frac{\mathcal{E}_{\text{MC}}}{\mathcal{E}_{\text{Data}}}.
 \end{equation}
 For this work, we present a preview of the value of the correction factors for \textit{Tight} ID working point for $\tauh$ candidates with $\pt$ above 45 GeV. Since this report is about a work in progress and we have not studied yet the effect of the systematic uncertainties on our results, we will take another approach on estimating the correction factors.
 
@@ -28,9 +28,9 @@ The values for the systematic uncertainties used to report the value of the corr
 \section{$\mu\tau$ Final state}
 We define the simulation correction factor as
 \begin{equation}
-	C_{\text{Tight-ID}}=\frac{N_{\text{MC}}}{N_{\text{DATA}}}.
+	C_{\text{Tight-ID}}=\frac{N_{\text{MC}}}{N_{\text{Data}}}.
 \end{equation}
-Where N is the total number of events that pass our selection. The number of events that gets selected after all the cuts and without the $\pt(\tauh)>45$ GeV requirement are shown in Table \ref{Table6}.
+Where $N_{\text{DATA}}$ are the total number of events measured in data substracting all the contributions from fake $\tauh$ estimated in the MC and  $N_{\text{MC}}$ are the number of events in simulation that have a truth matched $\tauh$. The number of events that get selected after all the cuts and without the $\pt(\tauh)>45$ GeV requirement are shown in Table \ref{Table6}.
 \begin{table}[H]
 	\centering
 	\resizebox{\columnwidth}{!}{%
@@ -57,7 +57,7 @@ C_{\text{Tight-ID}}=0.989\pm 0.012\text{(stat)}\pm 0.024\text{(lumi)}\pm 0.028\t
 \end{equation}
 All the distributions of the relevant cuts for selecting our signal events after applying all the other cuts are shown in Fig.\ref{Fig17} (Appendix A).
 \section{$e\tau$ Final state}
-For the final state that contains one electron and a $\tauh$ candidate, the number of events that gets selected after all the cuts and without the $\pt(\tauh)>45$ GeV requirement are shown in Table \ref{Table8}.
+For the final state that contains one electron and a $\tauh$ candidate, the number of events that get selected after all the cuts and without the $\pt(\tauh)>45$ GeV requirement are shown in Table \ref{Table8}.
 \begin{table}[H]
 	\centering
 	\resizebox{\columnwidth}{!}{%
@@ -80,24 +80,24 @@ For the final state that contains one electron and a $\tauh$ candidate, the numb
 \end{table}
 The value obtained for $C_{\text{Tight-ID}}$ is
 \begin{equation}
-C_{\text{Tight-ID}}=0.975\pm 0.014\text{(stat)}\pm 0.023\text{(lumi)}\pm 0.029\text{(sys)}.
+C_{\text{Tight-ID}}=0.974\pm 0.014\text{(stat)}\pm 0.023\text{(lumi)}\pm 0.029\text{(sys)}.
 \end{equation}
 All the distributions of the relevant cuts for selecting our signal events after applying all the other cuts are shown in Fig.\ref{Fig18} (Appendix A).
 \section{Discussion}
-As this study makes use of events highly boosted on the transverse plane the Z$(\pt)$ modelling is very important. In the first stages of our analysis we used Powheg+Pythia8 to simulate $Z\to\tauh l$ events. Fig.\ref{Fig23} shows the Z$(\pt)$ and $\Delta\phi(\tauh,l)$ for the muon-tau final state for in-between events. As it can be seen the tendency in the MC is to underestimate the data for high-Z$(\pt)$ values. These results have been previously reported by ATLAS studies \cite{Aad:2019wmn}, and Fig.\ref{Fig20} shows the Z$(\pt)$ modelling made by different generators. This has motivated us to use Sherpa to simulate our signal events. The Z$(\pt)$ results for this generator are shown in Fig.\ref{Fig19} and there is improvement for high-$\pt$ values over Powheg+Pythia8. The complete set of plots showing the Z$(\pt)$ distribution for both e-tau and mu-tau final states for the two different type of topologies are shown in Fig.\ref{Fig21} and Fig.\ref{Fig22}.
-\begin{figure}[H]
-	\centering
-	\subfloat[]{\label{Fig23a}{\includegraphics[width=0.50\textwidth]{figures/Fig23a}}}\hfill
-	\subfloat[]{\label{Fig23b}{\includegraphics[width=0.50\textwidth]{figures/Fig23b}}}
-	\caption{Distribution of Z$(\pt)$ for in-between events (a) and $\Delta\phi(\tauh,l)$ (b) using Powheg+Pythia8. All the other cuts have been applied apart from the one being plotted.}
-	\label{Fig23}
-\end{figure}
+As this study makes use of events highly boosted in the transverse plane the Z$(\pt)$ modelling is very important. All the plots that have been shown in previous sections make use of the Sherpa generator for $Z\to\tauh l$ events. Some distributions related to the Z$(\pt)$ are shown in Fig.\ref{Fig19} for Sherpa. The complete set of plots showing the Z$(\pt)$ distribution for both e-tau and mu-tau final states for the two different type of topologies are shown in Fig.\ref{Fig21} and Fig.\ref{Fig22}. In the first stages of our analysis we used Powheg+Pythia8 to simulate $Z\to\tauh l$ events. Fig.\ref{Fig23} shows the Z$(\pt)$ and $\Delta\phi(\tauh,l)$ for the muon-tau final state for in-between events modelled by Powheg+Pythia8. As it can be seen the tendency in the MC is to underestimate the data for high-Z$(\pt)$ values. These results have been previously reported in ATLAS studies \cite{Aad:2019wmn}. Fig.\ref{Fig20} shows the Z$(\pt)$ modelling made by different generators. This has motivated us to use Sherpa to simulate our signal events.
 \begin{figure}[H]
 	\centering
 	\subfloat[]{\label{Fig19a}{\includegraphics[width=0.50\textwidth]{figures/Fig19a}}}\hfill
 	\subfloat[]{\label{Fig19b}{\includegraphics[width=0.50\textwidth]{figures/Fig19b}}}
 	\caption{Distribution of Z$(\pt)$ for in-between events (a) and $\Delta\phi(\tauh,l)$ (b) using Sherpa. All the other cuts have been applied apart from the one being plotted.}
 	\label{Fig19}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\subfloat[]{\label{Fig23a}{\includegraphics[width=0.50\textwidth]{figures/Fig23a}}}\hfill
+	\subfloat[]{\label{Fig23b}{\includegraphics[width=0.50\textwidth]{figures/Fig23b}}}
+	\caption{Distribution of Z$(\pt)$ for in-between events (a) and $\Delta\phi(\tauh,l)$ (b) using Powheg+Pythia8. All the other cuts have been applied apart from the one being plotted.}
+	\label{Fig23}
 \end{figure}
 \begin{figure}[H]
 	\centering
