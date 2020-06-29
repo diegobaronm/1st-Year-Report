@@ -8,7 +8,7 @@ For this work, we present a preview of the value of the correction factors for \
 
 \section{Systematic uncertainties}
 The values for the systematic uncertainties used to report the value of the correction factors are presented in Table \ref{Tab5}. These numbers have been provided by Terry Wyatt and Sam Dysch, based on their previous experience working on analysis that make use of $Z\to\tauh l$ events.
-\begin{table}[H]
+\begin{table}[htbp]
 	\centering
 	\begin{tabular}{cc}
 		\hline
@@ -31,7 +31,7 @@ We define the simulation correction factor as
 	C_{\text{Tight-ID}}=\frac{N_{\text{MC}}}{N_{\text{Data}}}.
 \end{equation}
 Where $N_{\text{Data}}$ are the total number of events measured in data substracting all the contributions from fake $\tauh$ estimated in the MC and  $N_{\text{MC}}$ are the number of events in simulation that have a truth matched $\tauh$. The number of events that gets selected after all the cuts and without the $\pt(\tauh)>45$ GeV requirement are shown in Table \ref{Table6}.
-\begin{table}[H]
+\begin{table}[htbp]
 	\centering
 	\resizebox{\columnwidth}{!}{%
 	\begin{tabular}{ccc}
@@ -58,7 +58,7 @@ C_{\text{Tight-ID}}=0.989\pm 0.012\text{(stat)}\pm 0.017\text{(lumi)}\pm 0.020\t
 All the distributions of the relevant cuts for selecting our signal events after applying all the other cuts are shown in Fig.\ref{Fig17} (Appendix A).
 \section{$e\tau$ Final state}
 For the final state that contains one electron and a $\tauh$ candidate, the number of events that gets selected after all the cuts and without the $\pt(\tauh)>45$ GeV requirement are shown in Table \ref{Table8}.
-\begin{table}[H]
+\begin{table}[htbp]
 	\centering
 	\resizebox{\columnwidth}{!}{%
 	\begin{tabular}{ccc}
@@ -85,21 +85,21 @@ C_{\text{Tight-ID}}=0.974\pm 0.014\text{(stat)}\pm 0.017\text{(lumi)}\pm 0.020\t
 All the distributions of the relevant cuts for selecting our signal events after applying all the other cuts are shown in Fig.\ref{Fig18} (Appendix A).
 \section{Discussion}
 As this study makes use of events highly boosted in the transverse plane the Z$(\pt)$ modelling is very important. All the plots that have been shown in previous sections make use of the Sherpa generator for $Z\to\tauh l$ events. Some distributions related to the Z$(\pt)$ are shown in Fig.\ref{Fig19} for Sherpa. The complete set of plots showing the Z$(\pt)$ distribution for both e-tau and mu-tau final states for the two different type of topologies are shown in Fig.\ref{Fig21} and Fig.\ref{Fig22}. In the first stages of our analysis we used Powheg+Pythia8 to simulate $Z\to\tauh l$ events. Fig.\ref{Fig23} shows the Z$(\pt)$ and $\Delta\phi(\tauh,l)$ for the muon-tau final state for in-between events modelled by Powheg+Pythia8. As it can be seen the tendency in the MC is to underestimate the data for high-Z$(\pt)$ values. These results have been previously reported in ATLAS studies \cite{Aad:2019wmn}. Fig.\ref{Fig20} shows the Z$(\pt)$ modelling made by different generators. This has motivated us to use Sherpa to simulate our signal events.
-\begin{figure}[H]
+\begin{figure}[htbp]
 	\centering
 	\subfloat[]{\label{Fig19a}{\includegraphics[width=0.50\textwidth]{figures/Fig19a}}}\hfill
 	\subfloat[]{\label{Fig19b}{\includegraphics[width=0.50\textwidth]{figures/Fig19b}}}
 	\caption{Distribution of Z$(\pt)$ for in-between events (a) and $\Delta\phi(\tauh,l)$ (b) using Sherpa. All the other cuts have been applied apart from the one being plotted.}
 	\label{Fig19}
 \end{figure}
-\begin{figure}[H]
+\begin{figure}[htbp]
 	\centering
 	\subfloat[]{\label{Fig23a}{\includegraphics[width=0.50\textwidth]{figures/Fig23a}}}\hfill
 	\subfloat[]{\label{Fig23b}{\includegraphics[width=0.50\textwidth]{figures/Fig23b}}}
 	\caption{Distribution of Z$(\pt)$ for in-between events (a) and $\Delta\phi(\tauh,l)$ (b) using Powheg+Pythia8. All the other cuts have been applied apart from the one being plotted.}
 	\label{Fig23}
 \end{figure}
-\begin{figure}[H]
+\begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.5\textwidth]{figures/Fig20}
 	\caption{Comparison of the different modelling of the Z$(\pt)$ in Drell-Yan events made by different MC generators. As it can be seen Sherpa does a better job describing the Z boson transverse momentum for higher $(\pt)$ values than Powheg+Pythia8. However both generators underestimate the measured value in the high-Z$(\pt)$ region. Taken from \cite{Aad:2019wmn}.}
@@ -107,7 +107,7 @@ As this study makes use of events highly boosted in the transverse plane the Z$(
 \end{figure}
 
 Another challenging task will be to control the MJ background contribution when we go to looser regions in tau-ID. As it can be seen in Fig.\ref{Fig17c} and Fig.\ref{Fig17d} the MJ background contribution starts to be more important for 1-prong and 3-prong taus for looser values of the RNN score. We have explored the possible correlation that could arise in actual $Z\to\tauh l$ events in variables like the ratio between the transverse momentum of the tau and the lepton or the ratio between the Z$(\pt)$ and the leading jet. The distributions for this variables are shown in Fig.\ref{Fig24a} and Fig.\ref{Fig24b} respectively.
-\begin{figure}[H]
+\begin{figure}[htbp]
 	\centering
 	\subfloat[]{\label{Fig24a}{\includegraphics[width=0.50\textwidth]{figures/Fig24a}}}\hfill
 	\subfloat[]{\label{Fig24b}{\includegraphics[width=0.50\textwidth]{figures/Fig24b}}}

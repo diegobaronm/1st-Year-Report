@@ -28,7 +28,7 @@ p_{T_{\nu}}&=\ptmiss \cos(\Delta\phi(\tau_{\text{closer}},\ptmiss)),
 \\
 \eta(\nu)&=\eta(\tau_{\text{closer}}),
 \end{align} 
-\begin{figure}[ht]
+\begin{figure}[htbp]
 	\centering
 	\subfloat[]{\label{Fig7a}{\includegraphics[width=0.49\textwidth]{figures/Fig7a}}}\hfill
 	\subfloat[]{\label{Fig7b}{\includegraphics[width=0.49\textwidth]{figures/Fig7b}}}
@@ -61,7 +61,7 @@ then,
 	\end{equation}
 \end{itemize}
 Thus, $\Omega$ is a continuous variable that give us information on the topology of the event. When $\ptmiss$ is inside the visible system it has values in the interval [0,1]. It is exactly 0 when $\ptmiss$ is in the $\tauh$ direction and 1 when $\ptmiss$ is in the $\taul$ direction. $\Omega$ has negative values when $\ptmiss$ is outside and closer to the $\tauh$ candidate and has positive and values greater than 1 when is outside and closer to the $\taul$. A diagram describing the $\Omega$ values is shown in Fig.\ref{Fig8}.
-\begin{figure}[H]
+\begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.5\textwidth]{figures/Fig8}
 	\caption{Graphical representation of the different values of $\Omega$ depending on the region where the $\ptmiss$ is located in the event.}
@@ -73,7 +73,7 @@ The data used for this study has been recorded during the Run-II of the LHC. It 
 
 Monte Carlo (MC) samples are used for signal and background simulation. For $Z\to\tau\tau$ events two MC samples are used, Powheg+Pythia8 and Sherpa. For the rest of the samples Powheg+Pythia8 is used. Table \ref{Table3} shows the MC generators used for each process.
 
-\begin{table}[]
+\begin{table}[htbp]
 	\centering
 	\begin{tabular}{cc}
 		\hline
@@ -93,9 +93,9 @@ Monte Carlo (MC) samples are used for signal and background simulation. For $Z\t
 In order to select $Z\to\tauh\taul$ events, our basic selection includes events with exactly one $\tauh$ candidate and one lepton, a muon or an electron. The $\tauh$ and lepton pair need to have opposite charge. As we said, the presence of the lepton will be used as our tag, thus, a lepton trigger is required to be fired with an online requirement on the $p_{T}(\mu)\geq 20$ ($p_{T}(e)\geq 24$) GeV for 2015 data taking period. For 2016-2018 the online requirement is $p_{T}(\mu,e)\geq 26$ GeV. The muons are required to pass a \textit{medium} ID requirement and the electron has to pass a \textit{tight} ID filter. Additionally, both muons and electrons have to pass an offline $p_T$ requirement to be greater than 27 GeV. Finally, the opening angle between the two visible objects $\Delta\phi(\tauh,l)\leq 2\pi/3$.
 
 Events containing b-jets are vetoed in order to reject $t\bar{t}$ events. Also an isolation criterion is required to be passed by the leptons: for the muon (electron), the scalar sum of the $p_T$ of the tracks within a cone of $\Delta R=0.3 (0.2)$ of the muon (electron) must be less than 0.06 times the muon (electron) $p_T$. Additionally, for the electron, the sum of the calorimeter cluster energy in a cone of size $\Delta R=0.2$ must be 0.06 times smaller than the electron $p_T$. As we said in section \ref{chap4sec1}, we expect signal events to peak around $\Omega=1$, thus we select events where $\Omega\in (0,1.4)$. Fig.\ref{Fig9} shows the $\Omega$ distribution for $Z\to\tauh\mu$ final state.
-\begin{figure}[H]
+\begin{figure}[htbp]
 	\centering
-	\includegraphics[width=0.7\textwidth]{figures/Fig9}
+	\includegraphics[width=0.6\textwidth]{figures/Fig9}
 	\caption{Distribution of $\Omega$ for $Z\to\tauh\mu$ final state. All the other cuts have been applied apart from the one being plotted.The ATLAS data are shown as points with error bars, showing the statistical uncertainties. The detector-level predictions are shown as the shaded histograms, with the colour code as given on the plots.The region between the vertical dashed red lines is included in the final final candidate event sample by the selection criterion on the quantity plotted. The lower section of each plot shows the ratio of data to prediction. The uncertainties on the predictions represent the MC statistical uncertainties. These uncertainties are shown as blue shaded regions.}
 	\label{Fig9}
 \end{figure}
@@ -110,7 +110,7 @@ When the $\ptmiss$ is outside (\textit{outside events}),
 	\label{eq36}
 \end{equation}
 The RHS of \eqref{eq35} and \eqref{eq36} are vector sums, where $q$ represents the four-momentum of each particle. In the outside events case we manually add 5 GeV to maintain our cuts consistent, since in this region we find empirically that the di-tau mass is underestimated and we wish to apply the same selection in both regions. Fig.\ref{Fig10} shows the distribution of $\mreco$ for the in-between and outside $Z\to\tauh\mu$ events. 
-\begin{figure}[H]
+\begin{figure}[htbp]
 	\centering
 	\subfloat[]{\label{Fig10a}{\includegraphics[width=0.50\textwidth]{figures/Fig10a}}}\hfill
 	\subfloat[]{\label{Fig10b}{\includegraphics[width=0.50\textwidth]{figures/Fig10b}}}
@@ -119,7 +119,7 @@ The RHS of \eqref{eq35} and \eqref{eq36} are vector sums, where $q$ represents t
 \end{figure}
 
 In addition, for the $Z\to\tauh e$ final state, we add two cuts aimed to reject events where the $\tauh$ candidate is faked by an electron. First to reject $Z\to ee$ events, a requirement on the invariant mass of the electron and $\tauh$ candidate is made, $m(e,\tauh)<80$ GeV. Then, we also make use of an ID algorithm trained to discriminate electrons from real $\tauh$. We require, eBDTScore$\geq 0.06$. The distributions for these variables are shown in Fig.\ref{Fig11}.
-\begin{figure}[H]
+\begin{figure}[htbp]
 	\centering
 	\subfloat[]{\label{Fig11a}{\includegraphics[width=0.50\textwidth]{figures/Fig11a}}}\hfill
 	\subfloat[]{\label{Fig11b}{\includegraphics[width=0.50\textwidth]{figures/Fig11b}}}
@@ -127,7 +127,7 @@ In addition, for the $Z\to\tauh e$ final state, we add two cuts aimed to reject 
 	\label{Fig11}
 \end{figure}
 Finally, in order to measure the tau ID scale factors on the high-$p_T$ region we select events where $p_T(\tauh)\geq 45$ GeV. The $p_T$ distributions for $\tauh$ candidates are shown in Fig.\ref{Fig12} for the in-between and outside regions.
-\begin{figure}[H]
+\begin{figure}[htbp]
 	\centering
 	\subfloat[]{\label{Fig12a}{\includegraphics[width=0.50\textwidth]{figures/Fig12a}}}\hfill
 	\subfloat[]{\label{Fig12b}{\includegraphics[width=0.50\textwidth]{figures/Fig12b}}}
@@ -149,7 +149,7 @@ then,
 \label{eq36}
 \end{equation}
 where $\text{RQCD}\equiv\frac{\text{MJBG}_{\text{CROS}}}{\text{MJBG}_{\text{CRSS}}}$. So, \eqref{eq36} gives the estimation of MJ background on the signal region (SROS).
-\begin{figure}[H]
+\begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.5\textwidth]{figures/Fig13}
 	\caption{Diagram showing the regions defined to estimate MJ background contribution in the SROS region. This data-driven method is also known as the ABCD method.}

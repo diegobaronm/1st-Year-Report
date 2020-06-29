@@ -20,14 +20,14 @@ The tau reconstruction algorithm does not sufficient provide discrimination agai
 
 The RNN makes use of a set of variables like: $\tauh$ track features, information about energy deposits on the calorimeters clusters and high level features like the mass of the $\tauh$ candidate tracks. These variables are used to exploit the differences in the shapes of the showers between $\tauh$ and jets. In general, $\tauh$ showers tend to be more collimated and to have fewer tracks than jets. A representation of this is shown in Fig.\ref{Fig4}. 
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.4\textwidth]{figures/Fig4}
 	\caption{Graphic representation that shows the main differences between a 3-prong $\tauh$ and a jet originated from quark or gluon radiation (QCD jets). Charged hadrons are shown as thick lines and dashed lines represent neutral particles. The green cone is drawn to depict how $\tauh$ product decays are more collimated. Taken from \cite{SamImage}.}
 	\label{Fig4}
 \end{figure}
 Separate algorithms are trained for 1-prong and 3-prongs. The final RNN score assigned to each candidate corresponds to the fraction of rejected true $\tauh$, independent of $p_T$ and number of interactions per bunch crossing (pileup). Four working points with increasing background rejection are defined to be used in physics analysis. The working points and background rejection factors are shown in Table \ref{Table2}. A plot comparing the true $\tauh$ selection efficiency versus the background rejection power for the RNN and BDT algorithm is shown in Fig.\ref{Fig5}, the performance of the RNN is better than the BDT classifier. Finally, the distribution for the RNN score for true and fake $\tauh$ is shown in Fig.\ref{Fig6}, for both 1-prong and 3-prong decays.
-\begin{table}[H]
+\begin{table}[htbp]
 	\centering
 	\begin{tabular}{|l|l|l|l|l|l|l|}
 		\hline
@@ -41,13 +41,13 @@ Separate algorithms are trained for 1-prong and 3-prongs. The final RNN score as
 	\caption{Working points with their corresponding true $\tauh$ selection efficiency and the background rejection factors \cite{Deutsch:2680523}. The scores are shown for both RNN and BDT algorithms.}
 	\label{Table2}
 \end{table}
-\begin{figure}[H]
+\begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.5\textwidth]{figures/Fig5}
 	\caption{Comparisson between the performance of BDT and RNN algorithms. Working points are shown as solid dots. Notice there is a trade off between true $\tauh$ efficiency and background rejection power. Taken from \cite{Deutsch:2680523}.}
 	\label{Fig5}
 \end{figure}
-\begin{figure}[H]
+\begin{figure}[htbp]
 	\centering
 	\includegraphics[width=1\textwidth]{figures/Fig6}
 	\caption{Distribution of the RNN scores for true and fake $\tauh$ candidates for 1-prong (a) and 3-prong (b) cases. Taken from \cite{Deutsch:2680523}.}
