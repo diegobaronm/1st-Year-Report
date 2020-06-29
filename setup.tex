@@ -41,8 +41,15 @@
     % and comment the setkomafont line
     \usepackage{titlesec}  % remove "Chapter" from the chapter title
     \titleformat{\chapter}[hang]{\bfseries\huge}{\thechapter}{2pc}{\huge}
-    \titlespacing*{\chapter}{0pt}{-50pt}{40pt}
+    \titlespacing*{\chapter}{0pt}{10pt}{10pt}
     %\setkomafont{chapter}{\normalfont\bfseries\huge}
+        \makeatletter
+    \renewcommand\chapter{\par%
+    	\thispagestyle{plain}%
+    	\global\@topnum\z@
+    	\@afterindentfalse
+    	\secdef\@chapter\@schapter}
+    \makeatother
 
     \usepackage{setspace}  % Line spacing
     \onehalfspacing
@@ -60,9 +67,8 @@
     \usepackage[unicode=true,bookmarks=true,bookmarksnumbered=true,
                 bookmarksopen=true,bookmarksopenlevel=1,breaklinks=false,
                 pdfborder={0 0 0},backref=false,colorlinks=false]{hyperref}
+                
     \usepackage{etoolbox} % if-else commands
-
-
     %==========================================
     % You might not need the following packages, I only included them as they
     % are needed for the example floats
